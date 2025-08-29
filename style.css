@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template:
+    [row1-start] "header header header" 10% [row1-end]
+    [row2-start] "nav nav nav" 7% [row2-end]
+    [row3-start] "Shop" 15% [row3-end]
+    [row4-start] "main main side" 58% [row4-end]
+    [row4-start] "footer footer footer" 58% [row4-end]
+    / auto auto 25%;
+}
