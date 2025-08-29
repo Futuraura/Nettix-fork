@@ -2,10 +2,44 @@
     display: grid;
     height: 100vh;
     grid-template:
-    [row1-start] "header header header" 10% [row1-end]
-    [row2-start] "nav nav nav" 7% [row2-end]
-    [row3-start] "Shop" 15% [row3-end]
-    [row4-start] "main main side" 58% [row4-end]
-    [row4-start] "footer footer footer" 58% [row4-end]
-    / auto auto 25%;
+        [row1-start] "logo header header header" 10% [row1-end]
+        [row2-start] "nav nav nav nav" 7% [row2-end]
+        [row3-start] "shop shop shop shop" 15% [row3-end]
+        [row4-start] "main main main side" auto [row4-end]
+        [row5-start] "footer footer footer footer" 20% [row5-end]
+        / 15% auto auto 25%;
+}
+
+.side {
+  grid-area: side;
+  text-align: left;
+}
+.main {
+  grid-area: main;
+  text-align: left;
+}
+.header {
+  grid-area: header;
+  text-align: left;
+  background-color: #483AA0;
+}
+.nav {
+  grid-area: nav;
+  text-align: left;
+}
+.footer {
+  grid-area: footer;
+  text-align: left;
+}
+.shop {
+  grid-area: shop;
+  text-align: left;
+}
+.logo {
+  grid-area: logo;
+  text-align: left;
+  align-self: center;
+}
+body {
+    margin: 0;
 }
