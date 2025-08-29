@@ -22,6 +22,7 @@
   grid-area: header;
   text-align: left;
   background-color: #483AA0;
+  align-items: center;
 }
 .nav {
   grid-area: nav;
@@ -30,6 +31,7 @@
 .footer {
   grid-area: footer;
   text-align: left;
+  background-color: #483AA0;
 }
 .shop {
   grid-area: shop;
@@ -39,6 +41,9 @@
   grid-area: logo;
   text-align: left;
   align-self: center;
+  width: 100%;
+  height: 100%;
+  background-color: #483AA0;
 }
 body {
     margin: 0;
