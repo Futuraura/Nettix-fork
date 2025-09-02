@@ -1,12 +1,13 @@
 .container {
     display: grid;
-    height: 100vh;
+    height: 10000px;
     grid-template:
-        [row1-start] "logo header header header" 10% [row1-end]
-        [row2-start] "nav nav nav nav" 7% [row2-end]
-        [row3-start] "shop shop shop shop" 15% [row3-end]
+        [row1-start] "logo header header header" 70px [row1-end]
+        [row2-start] "nav nav nav nav" 70px [row2-end]
+        [row3-start] "shop shop shop shop" 150px [row3-end] 
         [row4-start] "main main main side" auto [row4-end]
-        [row5-start] "footer footer footer footer" 20% [row5-end]
+        [row5-start] "shop2 shop2 shop2 shop2" 150px [row5-end] 
+        [row6-start] "footer footer footer footer" 200px [row6-end]
         / 15% auto auto 25%;
 }
 
@@ -27,6 +28,7 @@
 .nav {
   grid-area: nav;
   text-align: left;
+  background-color: #0E2148;
 }
 .footer {
   grid-area: footer;
@@ -37,6 +39,11 @@
   grid-area: shop;
   text-align: left;
 }
+.shop2 {
+  grid-area: shop;
+  text-align: left;
+}
+
 .logo {
   grid-area: logo;
   text-align: left;
@@ -47,4 +54,31 @@
 }
 body {
     margin: 0;
+}
+
+.media-scroller {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+  gap: 10px;
+  overflow: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-element {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #00FF22;
+  border-radius: 2px;
+}
+
+.media-element > div {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+}
+
+div::-webkit-scrollbar{
+    display: none;
 }
