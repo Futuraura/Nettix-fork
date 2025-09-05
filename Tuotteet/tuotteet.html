@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuotteet</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!--Color choices-->
+    <style>
+        input[type=radio] {
+            display:none;
+        }
+        /*Choices*/
+        input#thing1[type=radio] + label
+        {
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-left: 20px;
+        }
+        input#thing1[type=radio]:checked + label
+        {
+        border-color: red;
+        border-style: solid;
+        height: 50px;
+        width: 50px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        }
+
+        input#thing2[type=radio] + label
+        {
+            background-color: green;
+            height: 50px;
+            width: 50px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+        }
+        input#thing2[type=radio]:checked + label
+        {
+        border-color: red;
+        border-style: solid;
+        height: 50px;
+        width: 50px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        }
+        
+        input#thing3[type=radio] + label
+        {
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+        }
+        input#thing3[type=radio]:checked + label
+        {
+        border-color: red;
+        border-style: solid;
+        height: 50px;
+        width: 50px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        }
+        /*size*/
+       
+        
+        input#size1[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+            margin-left: 20px;
+        }
+        input#size1[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+        input#size2[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+        }
+        input#size2[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+        input#size3[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+        }
+        input#size3[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+        input#size4[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+        }
+        input#size4[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+        input#size5[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+        }
+        input#size5[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+        input#size6[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+        }
+        input#size6[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+        input#size7[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+        }
+        input#size7[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+        input#size8[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+        }
+        input#size8[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+        input#size9[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+        }
+        input#size9[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+        input#size10[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+        }
+        input#size10[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+         input#size11[type=radio] + label
+        {
+            background-color: #AEAEAE;
+            height: 35px;
+            width: 45px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+            margin-right: 7px;
+        }
+        input#size11[type=radio]:checked + label
+        {
+        border-color: black;
+        border-style: solid;
+        height: 35px;
+        width: 45px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        margin-right: 7px;
+        }
+        
+    </style>
+    <div class="containerbasic">
+        <div class="header">
+            <!--Separate grid-->
+            <div class="containerheader">
+                <div class="headermain">
+                    <input type="text" placeholder="Search.." size="100vh" style="background-color: #FAFEE3; align-self: center; margin-top: 24px; margin-left: 1rem;">
+                    <button class="login">Kirjaudu sisään</button>
+                    <img src="../mdi--cart.png" class="img" width="50px">
+                    <img src="../menu-symbol-of-three-parallel-lines.svg" class="img2" width="40px">
+                </div>
+                <div class="logomain">
+                    <a href="../index.html"><img src="../Nettix.png" width="100%"></a>
+                </div>
+            </div>
+            <!---->
+        </div>
+
+        <div class="nav">
+
+        </div>
+
+        <div class="main">
+            <div class="containerproduct">
+                <div class="image">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../Nettix.png"></div>
+                            <div class="swiper-slide"><img src="../mdi--cart.png"></div>
+                            <div class="swiper-slide"><img src="../Nettix.png"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+                <div class="info">
+                    <h2 class="infotext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </h2>
+                    <div class="line"></div>
+                    <h3>Hinta xx.xx</h3>
+
+                    <h3>Valitse väri</h3>
+                    <input type="radio" name='colors' id="thing1"/><label for="thing1"></label>
+                    <input type="radio" name='colors' id="thing2"/><label for="thing2"></label>
+                    <input type="radio" name='colors' id="thing3"/><label for="thing3"></label>
+
+                    <h3>Valitse koko</h3>
+                    <input type="radio" name='size' id="size1"/><label for="size1"><h2 class="choice">27</h2></label>
+                    <input type="radio" name='size' id="size2"/><label for="size2"><h2 class="choice">28</h2></label>
+                    <input type="radio" name='size' id="size3"/><label for="size3"><h2 class="choice">29</h2></label>
+                    <input type="radio" name='size' id="size4"/><label for="size4"><h2 class="choice">30</h2></label>
+                    <input type="radio" name='size' id="size5"/><label for="size5"><h2 class="choice">31</h2></label>
+                    <input type="radio" name='size' id="size6"/><label for="size6"><h2 class="choice">32</h2></label>
+                    <input type="radio" name='size' id="size7"/><label for="size7"><h2 class="choice">33</h2></label>
+                    <input type="radio" name='size' id="size8"/><label for="size8"><h2 class="choice">34</h2></label>
+                    <input type="radio" name='size' id="size9"/><label for="size9"><h2 class="choice">35</h2></label>
+                    <input type="radio" name='size' id="size10"/><label for="size10"><h2 class="choice">36</h2></label>
+                    <input type="radio" name='size' id="size10"/><label for="size11"><h2 class="choice">37</h2></label>
+
+                    <h3>Kuinka monta kappaletta haluat</h3>
+                    
+                    <select id="amount" class="amountchoice">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+ 
+        });
+    </script>
+</body>
+</html>
