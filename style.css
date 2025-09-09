@@ -266,8 +266,25 @@ a {
 }
 .nav {
   grid-area: nav;
-  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
   background-color: #0E2148;
+  padding: 10px 2em 10px 2em;
+} 
+.nav_button {
+  color: white;
+  background-color: #0E2148;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+ .nav_button:hover {
+  background-color: #64a0e5;
 }
 .footer {
   margin-top: 20px;
@@ -376,7 +393,7 @@ div ::-webkit-scrollbar {
 /*header and img*/
 .login {
   margin-left: 95px;
-  background-color: #FAFEE3;
+  background-color: #ffffff;
   border-radius: 50px;
   display: inline-block;
   text-align: center;
