@@ -6,16 +6,29 @@ h1 {
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
 h3 {
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
 }
 h4 {
   font-family: Arial, Helvetica, sans-serif;
 }
 a {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+
+.size14px {
+  font-size: 14px;
 }
 
 /*Main container*/
@@ -79,6 +92,7 @@ a {
 .infotext {
   margin-left: 60px;
   padding-right: 60px;
+  font-weight: bold;
 }
 
 /*Container for shoppingcart*/
