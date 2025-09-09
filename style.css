@@ -77,6 +77,25 @@ a {
   padding-right: 60px;
 }
 
+/*Container for shoppingcart*/
+.containercart {
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template:  
+      [row1-start] "product info" auto [row1-end]
+      / 50% 50%;
+}
+
+.product {
+  grid-area: product;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /*Headers container*/
 .containerheader {
   height: 100%;
