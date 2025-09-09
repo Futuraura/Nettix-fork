@@ -66,6 +66,7 @@ a {
   grid-area: info;
   text-align: left;
   padding-left: 20px;
+  padding-right: 20px;
   align-items: center;
   background-color: #F5F5F5;
   margin-right: 20px;
@@ -87,8 +88,23 @@ a {
   width: 100%;
   display: grid;
   grid-template:  
-      [row1-start] "product info" auto [row1-end]
+      [row1-start] "product info2" auto [row1-end]
       / 55% 45%;
+}
+
+.info2 {
+  grid-area: info2;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  background-color: #F5F5F5;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  height: fit-content;
 }
 
 .product {
@@ -348,7 +364,7 @@ div ::-webkit-scrollbar {
   border-bottom: 1px;
   border-style: solid;
   border-color: black;
-  margin-right: 20px;
+  margin-right: 0;
 }
 
 .choice {
