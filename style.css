@@ -30,6 +30,19 @@ a {
 .size14px {
   font-size: 14px;
 }
+.size18px {
+  font-size: 18px;
+}
+
+.margin5px {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.margin0 {
+  margin: 0;
+}
+
 
 /*Main container*/
 .container {
@@ -126,6 +139,25 @@ a {
   text-align: left;
   align-items: center;
   justify-content: center;
+}
+/*Container for cart items*/
+.containercartitem {
+  margin-top: 20px;
+  align-self: center;
+  height: 330px;
+  width: 100%;
+  display: grid;
+  grid-template:  
+      [row1-start] "image iteminfo" auto [row1-end]
+      / 30% 70%;
+}
+
+.iteminfo {
+  grid-area: iteminfo;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 20px;
+  align-items: center;
 }
 
 
@@ -423,4 +455,26 @@ div ::-webkit-scrollbar {
   height: fit-content;
   display: flex;
   justify-content: space-between;
+}
+
+.flexcart {
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  margin-left: 40px;
+}
+
+.flexrow {
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.buttonnorm {
+  border: 0 0 0 0;
+  border-style: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
