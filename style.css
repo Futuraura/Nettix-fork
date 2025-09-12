@@ -406,8 +406,9 @@ div ::-webkit-scrollbar {
 }
 
 .headerlogo{
-  /*kesken*/
-  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .login {
   background-color: #ffffff;
