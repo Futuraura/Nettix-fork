@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ostoskori</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <script src = "ostoskori.js" defer></script>
 </head>
 <body>
@@ -13,13 +13,12 @@
             <!--Separate grid-->
             <div class="containerheader">
                 <div class="headermain">
-                    <input type="text" placeholder="Search.." size="100vh" style="background-color: #ffffff; align-self: center; margin-top: 24px; margin-left: 1rem;">
+                    <input type="text" placeholder="Hae.." class="searchbar" >
                     <button class="login">Kirjaudu sisään</button>
-                    <img src="../mdi--cart.png" class="img" width="50px">
-                    <img src="../menu-symbol-of-three-parallel-lines.svg" class="img2" width="40px">
+                    <a href="ostoskori.html"><img src="mdi--cart.png" class="img" width="50px"></a>
                 </div>
                 <div class="logomain">
-                    <a href="../index.html"><img src="../Nettix.png" width="100%"></a>
+                    <a href="index.html" class="headerlogo"><img src="Nettix.png" width="100%"></a>
                 </div>
             </div>
             <!---->
@@ -57,13 +56,13 @@
                     <div class="lunastamisflex">
                         <h2 style="text-align: left; font-size: medium; margin: 0;">
                             <button class="lunastamisnappi">
-                                <img src="lahjapaketti.png" height="20px" style="vertical-align: middle;">
+                                <img src="Ostoskorikuvat/lahjapaketti.png" height="20px" style="vertical-align: middle;">
                                 <span style="vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Lunasta lahjakortti</span>
                             </button> 
                         </h2>
                         <h2 style="text-align: right; font-size: medium; margin: 0;">
                             <button class="lunastamisnappi">
-                                <img src="kuponki.png" height="20px" style="vertical-align: middle;">
+                                <img src="Ostoskorikuvat/kuponki.png" height="20px" style="vertical-align: middle;">
                                 <span style="vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Lunasta kampanjakoodi</span>
                             </button> 
                         </h2>
@@ -71,8 +70,9 @@
                     <div class="line" style="margin-top: 5px; margin-bottom: 25px;"></div>
                     <h2 style="text-align: left; font-size: medium; margin: 0; margin-bottom: 25px;">
                         <div class="lunastamisnappi">
-                            <img src="rekka.png" height="20px" style="vertical-align: middle;">
+                            <img src="Ostoskorikuvat/rekka.png" height="20px" style="vertical-align: middle;">
                             <span style="vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Lisää xx.xx saavuttaaksesi ilmaisen toimituksen</span>
+                             <!-- note to self 60€ on maksimi ennen kuin teksti muuttuu -->
                         </div> 
                     </h2>
                     <br>
@@ -94,6 +94,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
     
 </body>

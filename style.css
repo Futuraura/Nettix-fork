@@ -339,6 +339,7 @@ a {
 .shop {
   grid-area: shop;
   text-align: left;
+  
 }
 .shop2 {
   grid-area: shop2;
