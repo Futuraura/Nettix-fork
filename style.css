@@ -303,19 +303,38 @@ a {
   background-color: #64a0e5;
 }
 .footer {
-  margin-top: 20px;
   grid-area: footer;
-  text-align: left;
   background-color: #483AA0;
+  width: 100%;
+  margin-top: 20px;
 }
 .footer_list {
   color: white;
   font-size: 18px;
   display: flex;
-  
+  width: 100%;
+  gap: 20px;
 }
-.footer_list ul{
-list-style-type:none;
+.footer_list h4{
+  text-align: center;
+  width: 100%;
+}
+
+.footer_list ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style-type:none;
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0;
+}
+
+
+.footer_list li {
+  text-align: center;
+  min-width: 0;
+  word-break: break-word;
 }
 .shop {
   grid-area: shop;
