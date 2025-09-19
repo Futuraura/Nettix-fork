@@ -19,13 +19,14 @@ function lisääTuote(){
             väri:"",
             koko:"",
             määrä:"",
+            kuva:"",
             randid:""
         }
         for (var ids of tuotelista){
             if (String(ids.tuotenumero) === String(list.tuotenumero)) {
                 temp.hinta = ids.hinta
                 temp.nimi = ids.nimi
-                
+                temp.kuva = ids.kuva
             }
         }
         
@@ -35,6 +36,7 @@ function lisääTuote(){
         temp.määrä = list.määrä;
         temp.randid = list.randid;
 
+        temp.hinta = Number(temp.hinta) * Number(temp.määrä);
         
         
     
@@ -49,6 +51,15 @@ function lisääTuote(){
         var diviteminfo = document.createElement("div");
         diviteminfo.classList.add("iteminfo");
 
+        var divimage = document.createElement("div");
+        divimage.classList.add("image");
+        divimage.classList.add("align-content_center");
+
+        var img = document.createElement("img");
+        img.classList.add("width100");
+        img.src = temp.kuva;
+        divimage.appendChild(img);
+
         var h2bold = document.createElement("h2");
         h2bold.classList.add("bold"); 
         h2bold.innerHTML = temp.nimi;
@@ -56,7 +67,7 @@ function lisääTuote(){
 
         var h2size18px = document.createElement("h2");
         h2size18px.classList.add("size18px");
-        h2size18px.innerHTML = "hinta: "+temp.hinta;
+        h2size18px.innerHTML = "hinta: "+temp.hinta+"€";
         diviteminfo.appendChild(h2size18px);
 
         var h2size18px2 = document.createElement("h2");
@@ -109,15 +120,14 @@ function lisääTuote(){
                 var k = 0;
                 k = 0;
                 for (var kohta of lista){
-                    console.log(kohta.randid)
-                    console.log(id)
+                    
                     if (kohta.randid == id){
                         lista.splice(k, 1);
-                        
+                        localStorage.setItem("ostoskorissa", JSON.stringify(lista));
+                        lista = JSON.parse(localStorage.getItem("ostoskorissa"));
+                        Yhteensä()
                     } 
                     k += 1;
-                    console.log(k)
-                    console.log(lista)
                 }
             });
         })(uniqueId);
@@ -167,6 +177,7 @@ function lisääTuote(){
 
 
         divcontainercartitem.appendChild(diviteminfo);
+        divcontainercartitem.appendChild(divimage);
 
         cart.append(divcontainercartitem)
 
@@ -176,4 +187,27 @@ function lisääTuote(){
 
 }
 
+function Yhteensä(){
+    var Yhteensä = document.getElementById("yhteensä")
+    var total = 0
+    total = 0
+    for (var list of lista){
+        var temps = [{
+            hinta:"",
+            määrä:""
+        }]
+        temps.määrä = list.määrä
+        for (var ids of tuotelista){
+            if (String(ids.tuotenumero) === String(list.tuotenumero)) {
+                temps.hinta = ids.hinta
+            }
+        }
+        total += Number(temps.määrä) * Number(temps.hinta)
+        console.log(temps.määrä)
+        console.log(total)
+    }
+    Yhteensä.innerHTML = total+" €"
+}
+
 lisääTuote()
+Yhteensä()

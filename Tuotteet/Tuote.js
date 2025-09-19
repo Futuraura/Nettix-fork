@@ -54,11 +54,14 @@ form.addEventListener("submit", function(event) {
         randid:numero
     }
 
-
-    var kori = JSON.parse(localStorage.getItem("ostoskorissa"));
-    kori.push(tuotekoriin);
-    localStorage.setItem("ostoskorissa", JSON.stringify(kori));
-
+    if (tuotekoriin.väri !== null){
+        if (tuotekoriin.koko !== null){
+            var kori = JSON.parse(localStorage.getItem("ostoskorissa"));
+            kori.push(tuotekoriin);
+            localStorage.setItem("ostoskorissa", JSON.stringify(kori));
+        }
+    }
+    
 });
 
 
