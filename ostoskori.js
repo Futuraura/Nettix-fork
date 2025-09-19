@@ -1,50 +1,26 @@
+
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
+console.log(localStorage)
 
 var lista = [{
-        nimi:"testi",
-        hinta:"10",
-        tuotenumero:"123456789",
+        tuotenumero:"1",
         väri:"keltainen",
         koko:"10",
         määrä:"1"
 
     },
     {
-        nimi:"testi",
-        hinta:"10",
-        tuotenumero:"123456789",
-        väri:"keltainen",
-        koko:"10",
-        määrä:"1"
-    },
-    {
-        nimi:"testi",
-        hinta:"10",
-        tuotenumero:"123456789",
-        väri:"keltainen",
-        koko:"10",
-        määrä:"1"
-    },
-    {
-        nimi:"testi",
-        hinta:"10",
-        tuotenumero:"123456789",
-        väri:"keltainen",
-        koko:"10",
-        määrä:"1"
-    },
-    {
-        nimi:"testi",
-        hinta:"10",
-        tuotenumero:"123456789",
+        tuotenumero:"2",
         väri:"keltainen",
         koko:"10",
         määrä:"1"
     }
 ]
 
+var tuotelista = JSON.parse(localStorage.getItem("listaidref"));
 
 
 
@@ -59,19 +35,25 @@ function lisääTuote(){
             määrä:"",
             randid:""
         }
-
-        temp.nimi = list.nimi;
-        temp.hinta = list.hinta;
+        for (var ids of tuotelista){
+            if (ids.tuotenumero === list.tuotenumero) {
+                temp.hinta = ids.hinta
+                temp.nimi = ids.nimi
+            }
+        }
+        
         temp.tuotenumero = list.tuotenumero;
         temp.väri = list.väri;
         temp.koko = list.koko;
         temp.määrä = list.määrä;
         temp.randid = getRandomInt(100000000000)
+
         
-        console.log(temp.randid)
+        
+    
         var uniqueId = temp.randid + "_" + temp.nimi;
 
-        var cart = document.getElementById("flexcart")
+        var cart = document.getElementById("flexcart");
         var divcontainercartitem = document.createElement("div");
         divcontainercartitem.classList.add("containercartitem");
         divcontainercartitem.id = uniqueId
