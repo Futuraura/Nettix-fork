@@ -1,10 +1,22 @@
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 var lista = [{
         nimi:"testi",
         hinta:"10",
         tuotenumero:"123456789",
         väri:"keltainen",
         koko:"10",
-        pituus:"100",
+        määrä:"1"
+
+    },
+    {
+        nimi:"testi",
+        hinta:"10",
+        tuotenumero:"123456789",
+        väri:"keltainen",
+        koko:"10",
         määrä:"1"
     },
     {
@@ -13,7 +25,22 @@ var lista = [{
         tuotenumero:"123456789",
         väri:"keltainen",
         koko:"10",
-        pituus:"100",
+        määrä:"1"
+    },
+    {
+        nimi:"testi",
+        hinta:"10",
+        tuotenumero:"123456789",
+        väri:"keltainen",
+        koko:"10",
+        määrä:"1"
+    },
+    {
+        nimi:"testi",
+        hinta:"10",
+        tuotenumero:"123456789",
+        väri:"keltainen",
+        koko:"10",
         määrä:"1"
     }
 ]
@@ -29,7 +56,8 @@ function lisääTuote(){
             tuotenumero:"",
             väri:"",
             koko:"",
-            pituus:""
+            määrä:"",
+            randid:""
         }
 
         temp.nimi = list.nimi;
@@ -37,17 +65,23 @@ function lisääTuote(){
         temp.tuotenumero = list.tuotenumero;
         temp.väri = list.väri;
         temp.koko = list.koko;
-        temp.pituus = list.pituus;
+        temp.määrä = list.määrä;
+        temp.randid = getRandomInt(100000000000)
+        
+        console.log(temp.randid)
+        var uniqueId = temp.randid + "_" + temp.nimi;
 
         var cart = document.getElementById("flexcart")
         var divcontainercartitem = document.createElement("div");
         divcontainercartitem.classList.add("containercartitem");
+        divcontainercartitem.id = uniqueId
+
 
         var diviteminfo = document.createElement("div");
         diviteminfo.classList.add("iteminfo");
 
         var h2bold = document.createElement("h2");
-        h2bold.classList.add("bold");
+        h2bold.classList.add("bold"); 
         h2bold.innerHTML = temp.nimi;
         diviteminfo.appendChild(h2bold);
 
@@ -73,37 +107,89 @@ function lisääTuote(){
         
         var h2size18px5 = document.createElement("h2");
         h2size18px5.classList.add("size18px");
-        h2size18px5.innerHTML = "pituus: "+temp.pituus;
+        h2size18px5.innerHTML = "määrä: "+temp.määrä;
         diviteminfo.appendChild(h2size18px5);
 
-        var divflexirow = document.createElement("div");
-        divflexirow.classList.add("flexirow");
-
-        var button1 = document.createElement("button");
-        button1.classList.add("buttonnorm");
-        button1.classList.add("buttoncart");
-
+        
         var h2margin0 = document.createElement("h2");
         h2margin0.classList.add("margin0");
         h2margin0.classList.add("bold");
-        h2margin0.classList.add("h2but");
-        h2margin0.innerHTML = "-";
+        h2margin0.classList.add("ostamisnappi");
+        h2margin0.innerHTML = "Poista";
+
+        var button1 = document.createElement("button");
+        button1.classList.add("padding0")
+        button1.classList.add("buttonnorm");
+        
+
         button1.appendChild(h2margin0);
+        diviteminfo.appendChild(button1)
 
-        var button2 = document.createElement("button");
-        button2.classList.add("buttonnorm");
-        button2.classList.add("buttoncart");
+        var button1 = document.createElement("button");
+        button1.classList.add("padding0")
+        button1.classList.add("buttonnorm");
 
-        var h2margin02 = document.createElement("h2");
-        h2margin02.classList.add("margin0");
-        h2margin02.classList.add("bold");
-        h2margin02.classList.add("h2but");
-        h2margin02.innerHTML = "+";
-        button2.appendChild(h2margin02);
+        button1.appendChild(h2margin0);
+        diviteminfo.appendChild(button1);
+
+        
+        (function(id){
+            button1.addEventListener("click", function() {
+                var item = document.getElementById(id);
+                if (item) item.remove();
+            });
+        })(uniqueId);
+
+
+        //  var divflexirow = document.createElement("div");
+        //divflexirow.classList.add("flexrow");
+
+        //var button1 = document.createElement("button");
+        //button1.classList.add("buttonnorm");
+        //button1.classList.add("buttoncart");
+        //button1.setAttribute("onclick","console.log('testi1');");
+
+        //var h2margin0 = document.createElement("h2");
+        //h2margin0.classList.add("margin0");
+        //h2margin0.classList.add("bold");
+        //h2margin0.classList.add("h2but");
+        //h2margin0.innerHTML = "-";
+        //button1.appendChild(h2margin0);
+
+        //var button2 = document.createElement("button");
+        //button2.classList.add("buttonnorm");
+        //button2.classList.add("buttoncart");
+        //button2.setAttribute("onclick","console.log('testi2');");
+
+        
+
+        //var h2margin02 = document.createElement("h2");
+        //h2margin02.classList.add("margin0");
+        //h2margin02.classList.add("bold");
+        //h2margin02.classList.add("h2but");
+        //h2margin02.innerHTML = "+";
+        //button2.appendChild(h2margin02);
+
+        //var h2h2cart = document.createElement("h2");
+        //h2h2cart.classList.add("margin0");
+        //h2h2cart.classList.add("size18px");
+        //h2h2cart.classList.add("bold");
+        //h2h2cart.classList.add("h2cart");
+        //h2h2cart.innerHTML = 1
+
+        //divflexirow.appendChild(button1)
+        //divflexirow.appendChild(h2h2cart)
+        //divflexirow.appendChild(button2)
+
+        //diviteminfo.appendChild(divflexirow)
+
 
         divcontainercartitem.appendChild(diviteminfo);
 
         cart.append(divcontainercartitem)
+
+        
+        
     }
 
 }
