@@ -6,6 +6,15 @@ var lista = [{
         koko:"10",
         pituus:"100",
         määrä:"1"
+    },
+    {
+        nimi:"testi",
+        hinta:"10",
+        tuotenumero:"123456789",
+        väri:"keltainen",
+        koko:"10",
+        pituus:"100",
+        määrä:"1"
     }
 ]
 
