@@ -26,6 +26,8 @@ form.addEventListener("submit", function(event) {
 
     const HowMany = document.getElementById("amount").value;
 
+   
+
     console.log("Selected Color: ", colorValue);
     console.log("Selected Size: ", sizeValue);
     console.log("Monta: ", HowMany);
