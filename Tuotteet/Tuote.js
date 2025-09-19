@@ -3,6 +3,18 @@ const Kuvat = [
     "Kuvat/Kuva1.jpg"
 ];
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+
+var ostoskori = localStorage.getItem("ostoskorissa");
+
+if (ostoskori == null) {
+        var ostoskoria = [];
+        localStorage.setItem("ostoskorissa", JSON.stringify(ostoskoria));
+    }
+
 let tuote_kuva1 = document.getElementById("ostos_kuva1");
 let tuote_kuva2 = document.getElementById("ostos_kuva2");
 let tuote_kuva3 = document.getElementById("ostos_kuva3");
@@ -31,5 +43,22 @@ form.addEventListener("submit", function(event) {
     console.log("Selected Color: ", colorValue);
     console.log("Selected Size: ", sizeValue);
     console.log("Monta: ", HowMany);
+
+    var numero = getRandomInt(100000000000)
+
+    var tuotekoriin = {
+        tuotenumero:"1",
+        väri:colorValue,
+        koko:sizeValue,
+        määrä:HowMany,
+        randid:numero
+    }
+
+
+    var kori = JSON.parse(localStorage.getItem("ostoskorissa"));
+    kori.push(tuotekoriin);
+    localStorage.setItem("ostoskorissa", JSON.stringify(kori));
+
 });
+
 

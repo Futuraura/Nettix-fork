@@ -1,24 +1,9 @@
 
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
-console.log(localStorage)
 
-var lista = [{
-        tuotenumero:"1",
-        väri:"keltainen",
-        koko:"10",
-        määrä:"1"
 
-    },
-    {
-        tuotenumero:"2",
-        väri:"keltainen",
-        koko:"10",
-        määrä:"1"
-    }
-]
+
+var lista = JSON.parse(localStorage.getItem("ostoskorissa"));
 
 var tuotelista = JSON.parse(localStorage.getItem("listaidref"));
 
@@ -26,6 +11,7 @@ var tuotelista = JSON.parse(localStorage.getItem("listaidref"));
 
 function lisääTuote(){
     for (var list of lista){
+        
         var temp = {
             nimi:"",
             hinta:"",
@@ -36,9 +22,10 @@ function lisääTuote(){
             randid:""
         }
         for (var ids of tuotelista){
-            if (ids.tuotenumero === list.tuotenumero) {
+            if (String(ids.tuotenumero) === String(list.tuotenumero)) {
                 temp.hinta = ids.hinta
                 temp.nimi = ids.nimi
+                
             }
         }
         
@@ -46,12 +33,12 @@ function lisääTuote(){
         temp.väri = list.väri;
         temp.koko = list.koko;
         temp.määrä = list.määrä;
-        temp.randid = getRandomInt(100000000000)
+        temp.randid = list.randid;
 
         
         
     
-        var uniqueId = temp.randid + "_" + temp.nimi;
+        var uniqueId = temp.randid;
 
         var cart = document.getElementById("flexcart");
         var divcontainercartitem = document.createElement("div");
@@ -119,6 +106,19 @@ function lisääTuote(){
             button1.addEventListener("click", function() {
                 var item = document.getElementById(id);
                 if (item) item.remove();
+                var k = 0;
+                k = 0;
+                for (var kohta of lista){
+                    console.log(kohta.randid)
+                    console.log(id)
+                    if (kohta.randid == id){
+                        lista.splice(k, 1);
+                        
+                    } 
+                    k += 1;
+                    console.log(k)
+                    console.log(lista)
+                }
             });
         })(uniqueId);
 
