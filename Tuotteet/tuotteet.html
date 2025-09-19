@@ -6,305 +6,12 @@
     <title>Tuotteet</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="Tuote.css">
     <script src = "Tuote.js" defer></script>
 </head>
 <body>
     <!--Color choices-->
-    <style>
-        
-        input[type=radio] {
-            display:none;
-        }
-        /*Choices*/
-        input#thing1[type=radio] + label
-        {
-            background-color: blue;
-            height: 50px;
-            width: 50px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-left: 20px;
-        }
-        input#thing1[type=radio]:checked + label
-        {
-        border-color: red;
-        border-style: solid;
-        height: 50px;
-        width: 50px;
-        display:inline-block;
-        padding: 0 0 0 0px;
-        }
-
-        input#thing2[type=radio] + label
-        {
-            background-color: green;
-            height: 50px;
-            width: 50px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-        }
-        input#thing2[type=radio]:checked + label
-        {
-        border-color: red;
-        border-style: solid;
-        height: 50px;
-        width: 50px;
-        display:inline-block;
-        padding: 0 0 0 0px;
-        }
-        
-        input#thing3[type=radio] + label
-        {
-            background-color: red;
-            height: 50px;
-            width: 50px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-        }
-        input#thing3[type=radio]:checked + label
-        {
-        border-color: red;
-        border-style: solid;
-        height: 50px;
-        width: 50px;
-        display:inline-block;
-        padding: 0 0 0 0px;
-        }
-        /*size*/
-       
-        
-        input#size1[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size1[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-        input#size2[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size2[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-        input#size3[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size3[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-        input#size4[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size4[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-        input#size5[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size5[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-        input#size6[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size6[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-        input#size7[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size7[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-        input#size8[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size8[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-        input#size9[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size9[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-        input#size10[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size10[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-         input#size11[type=radio] + label
-        {
-            background-color: #AEAEAE;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-            margin-bottom: 7px;
-        }
-        input#size11[type=radio]:checked + label
-        {
-            border-color: black;
-            border-style: solid;
-            height: 35px;
-            width: 45px;
-            display:inline-block;
-            padding: 0 0 0 0px;
-            margin-right: 7px;
-        }
-        
-    </style>
+    
     <div class="containerbasic">
         <div class="header">
             <!--Separate grid-->
@@ -315,7 +22,7 @@
                     <a href="ostoskori.html"><img src="../mdi--cart.png" class="img" width="50px"></a>
                 </div>
                 <div class="logomain">
-                    <a href="index.html" class="headerlogo"><img src="..Nettix.png" width="100%"></a>
+                    <a href="index.html" class="headerlogo"><img src="../Nettix.png" width="100%"></a>
                 </div>
             </div>
             <!---->
@@ -349,23 +56,23 @@
 
                     <form id="ostoskori_tieto">
                         <h3>Valitse väri</h3>
-                        <input type="radio" name='colors' id="thing1"/><label for="thing1"></label>
-                        <input type="radio" name='colors' id="thing2"/><label for="thing2"></label>
-                        <input type="radio" name='colors' id="thing3"/><label for="thing3"></label>
+                        <input type="radio" name='colors' id="thing1" value="sininen"/><label for="thing1"></label>
+                        <input type="radio" name='colors' id="thing2" value="vihreä"/><label for="thing2"></label>
+                        <input type="radio" name='colors' id="thing3" value="punainen"/><label for="thing3"></label>
 
                         <h3>Valitse koko</h3>
                         <div class="sizebox">
-                            <input type="radio" name='size' id="size1"/><label for="size1"><h2 class="choice">27</h2></label>
-                            <input type="radio" name='size' id="size2"/><label for="size2"><h2 class="choice">28</h2></label>
-                            <input type="radio" name='size' id="size3"/><label for="size3"><h2 class="choice">29</h2></label>
-                            <input type="radio" name='size' id="size4"/><label for="size4"><h2 class="choice">30</h2></label>
-                            <input type="radio" name='size' id="size5"/><label for="size5"><h2 class="choice">31</h2></label>
-                            <input type="radio" name='size' id="size6"/><label for="size6"><h2 class="choice">32</h2></label>
-                            <input type="radio" name='size' id="size7"/><label for="size7"><h2 class="choice">33</h2></label>
-                            <input type="radio" name='size' id="size8"/><label for="size8"><h2 class="choice">34</h2></label>
-                            <input type="radio" name='size' id="size9"/><label for="size9"><h2 class="choice">35</h2></label>
-                            <input type="radio" name='size' id="size10"/><label for="size10"><h2 class="choice">36</h2></label>
-                            <input type="radio" name='size' id="size11"/><label for="size11"><h2 class="choice">37</h2></label>
+                            <input type="radio" name='size' id="size1" value="27"/><label for="size1"><h2 class="choice">27</h2></label>
+                            <input type="radio" name='size' id="size2" value="28"/><label for="size2"><h2 class="choice">28</h2></label>
+                            <input type="radio" name='size' id="size3" value="29"/><label for="size3"><h2 class="choice">29</h2></label>
+                            <input type="radio" name='size' id="size4" value="30"/><label for="size4"><h2 class="choice">30</h2></label>
+                            <input type="radio" name='size' id="size5" value="31"/><label for="size5"><h2 class="choice">31</h2></label>
+                            <input type="radio" name='size' id="size6" value="32"/><label for="size6"><h2 class="choice">32</h2></label>
+                            <input type="radio" name='size' id="size7" value="33"/><label for="size7"><h2 class="choice">33</h2></label>
+                            <input type="radio" name='size' id="size8" value="34"/><label for="size8"><h2 class="choice">34</h2></label>
+                            <input type="radio" name='size' id="size9" value="35"/><label for="size9"><h2 class="choice">35</h2></label>
+                            <input type="radio" name='size' id="size10" value="36"/><label for="size10"><h2 class="choice">36</h2></label>
+                            <input type="radio" name='size' id="size11" value="37"/><label for="size11"><h2 class="choice">37</h2></label>
                         </div>
                         <h3>Kuinka monta kappaletta haluat</h3>
                         
