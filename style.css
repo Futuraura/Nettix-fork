@@ -260,10 +260,26 @@ a {
 }
 .headermain {
   grid-area: headermain;
+  display: flex;
   text-align: left;
   background-color: #483AA0;
   align-items: center;
+  gap: 2em;
+  
 }
+.searchbar{
+  background-color:#ffffff; 
+  align-self: center; 
+  border-radius: 20px;
+  border-width: 10px;
+  border: 3px solid black;
+  padding: 10px 10px;
+  width: 100%;
+}
+.searchbar:focus {
+  outline: none;
+}
+
 .nav {
   grid-area: nav;
   display: flex;
@@ -287,14 +303,43 @@ a {
   background-color: #64a0e5;
 }
 .footer {
-  margin-top: 20px;
   grid-area: footer;
-  text-align: left;
   background-color: #483AA0;
+  width: 100%;
+  margin-top: 20px;
+}
+.footer_list {
+  color: white;
+  font-size: 18px;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.footer_list h4{
+  text-align: center;
+  width: 100%;
+}
+
+.footer_list ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style-type:none;
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0;
+}
+
+
+.footer_list li {
+  text-align: center;
+  min-width: 0;
+  word-break: break-word;
 }
 .shop {
   grid-area: shop;
   text-align: left;
+  
 }
 .shop2 {
   grid-area: shop2;
@@ -389,25 +434,27 @@ div ::-webkit-scrollbar {
   margin-right: 10px;
 }
 
-
-/*header and img*/
+.headerlogo{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 .login {
-  margin-left: 95px;
   background-color: #ffffff;
   border-radius: 50px;
   display: inline-block;
   text-align: center;
-  padding: 7px 5px 7px 5px;
-  border: black;
-  border-style: solid;
-  border-width: 3px;
+  padding: 10px 10px;
+  border: 3px solid black;
+  height: 60%;
+  font-size: 70%;
+  
 }
 
-.img {
-  margin-top: 10px;
-  margin-left: 20px;
-  position: absolute;
+.img{
+  margin-right: 1em;
 }
+
 .img2 {
   margin-top: 15px;
   margin-left: 90px;

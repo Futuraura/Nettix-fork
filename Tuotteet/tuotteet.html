@@ -11,6 +11,7 @@
 <body>
     <!--Color choices-->
     <style>
+        
         input[type=radio] {
             display:none;
         }
@@ -309,13 +310,12 @@
             <!--Separate grid-->
             <div class="containerheader">
                 <div class="headermain">
-                    <input type="text" placeholder="Hae.." size="100vh" style="background-color: #ffffff; align-self: center; margin-top: 24px; margin-left: 1rem;">
+                    <input type="text" placeholder="Hae.." class="searchbar" >
                     <button class="login">Kirjaudu sisään</button>
-                    <img src="../mdi--cart.png" class="img" width="50px">
-                    <img src="../menu-symbol-of-three-parallel-lines.svg" class="img2" width="40px">
+                    <a href="ostoskori.html"><img src="../mdi--cart.png" class="img" width="50px"></a>
                 </div>
                 <div class="logomain">
-                    <a href="../index.html"><img src="../Nettix.png" width="100%"></a>
+                    <a href="index.html" class="headerlogo"><img src="..Nettix.png" width="100%"></a>
                 </div>
             </div>
             <!---->
@@ -347,41 +347,43 @@
                     <div class="line"></div>
                     <h3>Hinta xx.xx</h3>
 
-                    <h3>Valitse väri</h3>
-                    <input type="radio" name='colors' id="thing1"/><label for="thing1"></label>
-                    <input type="radio" name='colors' id="thing2"/><label for="thing2"></label>
-                    <input type="radio" name='colors' id="thing3"/><label for="thing3"></label>
+                    <form id="ostoskori_tieto">
+                        <h3>Valitse väri</h3>
+                        <input type="radio" name='colors' id="thing1"/><label for="thing1"></label>
+                        <input type="radio" name='colors' id="thing2"/><label for="thing2"></label>
+                        <input type="radio" name='colors' id="thing3"/><label for="thing3"></label>
 
-                    <h3>Valitse koko</h3>
-                    <div class="sizebox">
-                        <input type="radio" name='size' id="size1"/><label for="size1"><h2 class="choice">27</h2></label>
-                        <input type="radio" name='size' id="size2"/><label for="size2"><h2 class="choice">28</h2></label>
-                        <input type="radio" name='size' id="size3"/><label for="size3"><h2 class="choice">29</h2></label>
-                        <input type="radio" name='size' id="size4"/><label for="size4"><h2 class="choice">30</h2></label>
-                        <input type="radio" name='size' id="size5"/><label for="size5"><h2 class="choice">31</h2></label>
-                        <input type="radio" name='size' id="size6"/><label for="size6"><h2 class="choice">32</h2></label>
-                        <input type="radio" name='size' id="size7"/><label for="size7"><h2 class="choice">33</h2></label>
-                        <input type="radio" name='size' id="size8"/><label for="size8"><h2 class="choice">34</h2></label>
-                        <input type="radio" name='size' id="size9"/><label for="size9"><h2 class="choice">35</h2></label>
-                        <input type="radio" name='size' id="size10"/><label for="size10"><h2 class="choice">36</h2></label>
-                        <input type="radio" name='size' id="size10"/><label for="size11"><h2 class="choice">37</h2></label>
-                    </div>
-                    <h3>Kuinka monta kappaletta haluat</h3>
-                    
-                    <select id="amount" class="amountchoice">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <br>
-                    <h1 style="text-align: center; font-size: medium;">
-                        <button class="ostamisnappi" id="lisää_ostoskoriin" style="height: 50px;">
-                                <img src="../ostoskori.png" height="25px" style="vertical-align: middle;">
-                                <span style="vertical-align: middle; font-family: Arial, Helvetica, sans-serif;">Lisää ostoskoriin</span>
-                        </button> 
-                    </h1>
+                        <h3>Valitse koko</h3>
+                        <div class="sizebox">
+                            <input type="radio" name='size' id="size1"/><label for="size1"><h2 class="choice">27</h2></label>
+                            <input type="radio" name='size' id="size2"/><label for="size2"><h2 class="choice">28</h2></label>
+                            <input type="radio" name='size' id="size3"/><label for="size3"><h2 class="choice">29</h2></label>
+                            <input type="radio" name='size' id="size4"/><label for="size4"><h2 class="choice">30</h2></label>
+                            <input type="radio" name='size' id="size5"/><label for="size5"><h2 class="choice">31</h2></label>
+                            <input type="radio" name='size' id="size6"/><label for="size6"><h2 class="choice">32</h2></label>
+                            <input type="radio" name='size' id="size7"/><label for="size7"><h2 class="choice">33</h2></label>
+                            <input type="radio" name='size' id="size8"/><label for="size8"><h2 class="choice">34</h2></label>
+                            <input type="radio" name='size' id="size9"/><label for="size9"><h2 class="choice">35</h2></label>
+                            <input type="radio" name='size' id="size10"/><label for="size10"><h2 class="choice">36</h2></label>
+                            <input type="radio" name='size' id="size11"/><label for="size11"><h2 class="choice">37</h2></label>
+                        </div>
+                        <h3>Kuinka monta kappaletta haluat</h3>
+                        
+                        <select id="amount" class="amountchoice">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <br>
+                        <h1 style="text-align: center; font-size: medium;">
+                            <button type="submit" class="ostamisnappi" id="lisää_ostoskoriin" style="height: 50px;">
+                                    <img src="Kuvat/ostoskori.png" height="25px" style="vertical-align: middle;">
+                                    <span style="vertical-align: middle; font-family: Arial, Helvetica, sans-serif;">Lisää ostoskoriin</span>
+                            </button> 
+                        </h1>
+                    </form>
                     <h1 style="text-align: center; font-size: medium; margin-bottom: 10px;">
                         <button class="ostamisnappi" id="osta_nyt" style="padding: 0px 93.5px 0px 93.5px;"><h4>Osta nyt</h4></button>
                     </h1>
