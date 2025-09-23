@@ -3,6 +3,7 @@ var tuotelistaid = [{
         tuotenumero:"1",
         nimi:"paita",
         hinta:"50",
+        tuotesivunkuva:["../Kuvat/Kuva1.jpg"],
         kuva:"Tuotteet/Kuvat/kuva1.jpg"
     },
     //---temps---
@@ -10,12 +11,14 @@ var tuotelistaid = [{
         tuotenumero:"2",
         nimi:"housu",
         hinta:"40",
-        kuva:"Tuotteet/Kuvat/kuva1.jpg"
+        tuotesivunkuva:["../Kuvat/Kuva2.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva2.jpg"
     },
     {
         tuotenumero:"3",
         nimi:"hattu",
         hinta:"41",
+        tuotesivunkuva:["../Kuvat/Kuva1.jpg"],
         kuva:"Tuotteet/Kuvat/kuva1.jpg"
     }
     //------------
@@ -49,5 +52,6 @@ localStorage.setItem("listaidref", JSON.stringify(tuotelistaid));
 //        tuotenumero:"2",
 //        nimi:"housu",
 //        hinta:"40",
+//        tuotesivunkuva:["../Kuvat/Kuva2.jpg"],
 //        kuva:"Tuotteet/Kuvat/kuva1.jpg"
 //    }

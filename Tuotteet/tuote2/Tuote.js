@@ -5,7 +5,7 @@ var tuoteenhinta = document.getElementById("hinta");
 var tuoteennimi = document.getElementById("nimi");
 var listaideitä = JSON.parse(localStorage.getItem("listaidref"));
 
-var tuotenumero = "1"
+var tuotenumero = "2"
 
 for (var lista of listaideitä){
     if (lista.tuotenumero === tuotenumero){
