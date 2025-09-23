@@ -2,7 +2,7 @@
 var tuotelistaid = [{
         tuotenumero:"1",
         nimi:"paita",
-        hinta:"10",
+        hinta:"50",
         kuva:"Tuotteet/Kuvat/kuva1.jpg"
     },
     //---temps---

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuotteet</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="Tuote.css">
     <script src = "Tuote.js" defer></script>
+    
 </head>
 <body>
     <!--Color choices-->
@@ -19,19 +20,19 @@
                 <div class="headermain">
                     <input type="text" placeholder="Hae.." class="searchbar" >
                     <button class="login">Kirjaudu sisään</button>
-                    <a href="../ostoskori.html"><img src="../mdi--cart.png" class="img" width="50px"></a>
+                    <a href="../../ostoskori.html"><img src="../../mdi--cart.png" class="img" width="50px"></a>
                 </div>
                 <div class="logomain">
-                    <a href="../index.html" class="headerlogo"><img src="../Nettix.png" width="100%"></a>
+                    <a href="../../index.html" class="headerlogo"><img src="../../Nettix.png" width="100%"></a>
                 </div>
             </div>
             <!---->
         </div>
 
         <div class="nav">
-            <a href="../miehet.html" class="nav_button"><div>Miehet</div></a>
-            <a href="../naiset.html" class="nav_button"><div>Naiset</div></a>
-            <a href="../lapset.html" class="nav_button"><div>Lapset</div></a>
+            <a href="../../miehet.html" class="nav_button"><div>Miehet</div></a>
+            <a href="../../naiset.html" class="nav_button"><div>Naiset</div></a>
+            <a href="../../lapset.html" class="nav_button"><div>Lapset</div></a>
         </div>
 
         <div class="main">
@@ -52,9 +53,9 @@
                     </div>
                 </div>
                 <div class="info">
-                    <h2 class="infotext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </h2>
+                    <h2 class="infotext" id="nimi">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </h2>
                     <div class="line"></div>
-                    <h3>Hinta xx.xx</h3>
+                    <h3 id="hinta">Hinta xx.xx</h3>
 
                     <form id="ostoskori_tieto">
                         <h3>Valitse väri</h3>
@@ -88,12 +89,12 @@
                         <br>
                         <h1 style="text-align: center; font-size: medium;">
                             <button type="submit" class="ostamisnappi" id="lisää_ostoskoriin" style="height: 50px;">
-                                    <img src="Kuvat/ostoskori.png" height="25px" style="vertical-align: middle;">
+                                    <img src="../Kuvat/ostoskori.png" height="25px" style="vertical-align: middle;">
                                     <span style="vertical-align: middle; font-family: Arial, Helvetica, sans-serif;">Lisää ostoskoriin</span>
                             </button> 
                         </h1>
                          <h1 style="text-align: center; font-size: medium; margin-bottom: 10px;">
-                            <button type="submit" onclick="location.href='../ostoskori.html'" class="ostamisnappi" id="osta_nyt" style="padding: 0px 93.5px 0px 93.5px;"><h4>Osta nyt</h4></button>
+                            <button type="submit" onclick="location.href='../../ostoskori.html'" class="ostamisnappi" id="osta_nyt" style="padding: 0px 93.5px 0px 93.5px;"><h4>Osta nyt</h4></button>
                         </h1>
                     </form>
 
@@ -117,5 +118,6 @@
  
         });
     </script>
+    <script src = "../../tuotelistid.js"></script>
 </body>
 </html>

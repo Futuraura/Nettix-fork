@@ -1,6 +1,6 @@
 
 const Kuvat = [
-    "Kuvat/Kuva1.jpg"
+    "../Kuvat/Kuva1.jpg"
 ];
 
 function getRandomInt(max) {
@@ -21,6 +21,19 @@ let tuote_kuva3 = document.getElementById("ostos_kuva3");
 tuote_kuva1.innerHTML = `<img src="${Kuvat[0]}">`;
 tuote_kuva2.innerHTML = `<img src="${Kuvat[0]}">`;
 tuote_kuva3.innerHTML = `<img src="${Kuvat[0]}">`;
+
+var tuoteenhinta = document.getElementById("hinta");
+var tuoteennimi = document.getElementById("nimi");
+var listaideitä = JSON.parse(localStorage.getItem("listaidref"));
+
+var tuotenumero = "1"
+
+for (var lista of listaideitä){
+    if (lista.tuotenumero === tuotenumero){
+        tuoteenhinta.innerHTML = "Hinta "+lista.hinta+"€"
+        tuoteennimi.innerHTML = lista.nimi
+    }
+}
 
 
 
@@ -47,7 +60,7 @@ form.addEventListener("submit", function(event) {
     var numero = getRandomInt(100000000000)
 
     var tuotekoriin = {
-        tuotenumero:"1",
+        tuotenumero:tuotenumero,
         väri:colorValue,
         koko:sizeValue,
         määrä:HowMany,
