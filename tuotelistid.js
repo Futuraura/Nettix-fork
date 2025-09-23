@@ -21,6 +21,26 @@ var tuotelistaid = [{
     //------------
 ]
 
+
+var alennuskoodi = [
+    {
+    nimi:"testi",
+    määrä:"10",
+    prosentti:false
+    },
+    {
+    nimi:"testi2",
+    määrä:"50",
+    prosentti:true
+    },
+    {
+    nimi:"testi3",
+    määrä:"32",
+    prosentti:true
+    }
+]
+
+localStorage.setItem("koodit", JSON.stringify(alennuskoodi));
 localStorage.setItem("listaidref", JSON.stringify(tuotelistaid));
 
 //-----template------

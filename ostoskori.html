@@ -47,7 +47,7 @@
                             </button> 
                         </h2>
                         <h2 style="text-align: right; font-size: medium; margin: 0;">
-                            <button class="lunastamisnappi">
+                            <button class="lunastamisnappi" id="open-dialog" onclick="opendial(event)">
                                 <img src="Ostoskorikuvat/kuponki.png" height="20px" style="vertical-align: middle;">
                                 <span style="vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Lunasta kampanjakoodi</span>
                             </button> 
@@ -63,12 +63,12 @@
                     </h2>
                     <br>
                     <div class="lunastamisflex">
-                        <h3 class="italic size14px margin5px">Välisumma:</h3>
-                        <h3 class="size14px bold margin5px">xx.xx</h3>
+                        <h3 class="italic size14px margin5px" >Välisumma:</h3>
+                        <h3 class="size14px bold margin5px" id="välisumma"></h3>
                     </div>
                     <div class="lunastamisflex">
-                        <h3 class="italic size14px margin5px">Toimitus ja käsittely:</h3>
-                        <h3 class="size14px bold margin5px">xx.xx</h3>
+                        <h3 class="italic size14px margin5px">Alennus</h3>
+                        <h3 class="size14px bold margin5px" id="alennus"></h3>
                     </div>
                     <div class="lunastamisflex">
                         <h3 class="bold size14px margin5px">Yhteensä:</h3>
@@ -77,6 +77,14 @@
                     <h1 style="text-align: center; font-size: medium; margin-bottom: 10px;">
                         <button class="ostamisnappi" id="kassa" style="padding: 0px 93.5px 0px 93.5px;"><h4>Kassa</h4></button>
                     </h1>
+                    <dialog id="dialo" style="text-align: center;">
+                        <label for="koodi"><h2 class="size14px">Koodi</h2></label>
+                        <input type="text" id="koodi" name="koodi">
+                        <br>
+                        <br>
+
+                        <button class="buttonnorm" onclick="closedial(event)">valmis</button>
+                    </dialog>
                 </div>
             </div>
         </div>

@@ -7,6 +7,21 @@ var lista = JSON.parse(localStorage.getItem("ostoskorissa"));
 
 var tuotelista = JSON.parse(localStorage.getItem("listaidref"));
 
+var koodi = JSON.parse(localStorage.getItem("koodit"));
+
+function closedial(event) {
+    dialog = document.getElementById("dialo")
+    event.preventDefault()
+    dialog.close()
+    Yhteensä()
+}
+
+function opendial(event) {
+    dialog = document.getElementById("dialo");
+    event.preventDefault()
+    dialog.showModal();
+    Yhteensä()
+}
 
 
 function lisääTuote(){
@@ -188,7 +203,9 @@ function lisääTuote(){
 }
 
 function Yhteensä(){
-    var Yhteensä = document.getElementById("yhteensä")
+    var Välisumma = document.getElementById("välisumma");
+    var Alennus = document.getElementById("alennus");
+    var Yhteensä = document.getElementById("yhteensä");
     var total = 0
     total = 0
     for (var list of lista){
@@ -202,11 +219,40 @@ function Yhteensä(){
                 temps.hinta = ids.hinta
             }
         }
-        total += Number(temps.määrä) * Number(temps.hinta)
-        console.log(temps.määrä)
-        console.log(total)
+        total += Number(temps.määrä) * Number(temps.hinta);
     }
-    Yhteensä.innerHTML = total+" €"
+    Välisumma.innerHTML = total+"€"
+    var laitettukoodi = document.getElementById("koodi").value
+    console.log(laitettukoodi)
+    var temps2 = [{
+        vähennys:"",
+        prosentti:"",
+    }]
+    for (var koodit of koodi){
+        if (laitettukoodi === koodit.nimi) {
+            temps2.vähennys = koodit.määrä;
+            temps2.prosentti = koodit.prosentti;
+        }
+    }
+
+    if (temps2.vähennys == null) {
+        Yhteensä.innerHTML = total+"€"
+        Alennus.innerHTML = "0€"
+    }
+
+    else if (temps2.prosentti === true) {
+        total = total / 100;
+        total = total * Number(temps2.vähennys);
+        Alennus.innerHTML = "-"+temps2.vähennys+"%"
+        Yhteensä.innerHTML = total+"€"
+    }
+    else if (temps2.prosentti === false) {
+        total = total - Number(temps2.vähennys);
+        Alennus.innerHTML = "-"+temps2.vähennys+"€"
+        Yhteensä.innerHTML = total+"€"
+    }   
+    
+    
 }
 
 lisääTuote()

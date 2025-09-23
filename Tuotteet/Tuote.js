@@ -61,7 +61,4 @@ form.addEventListener("submit", function(event) {
             localStorage.setItem("ostoskorissa", JSON.stringify(kori));
         }
     }
-    
 });
-
-
