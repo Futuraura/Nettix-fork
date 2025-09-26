@@ -579,7 +579,7 @@ div ::-webkit-scrollbar {
   font-size: 2vw;
 }
 
-#SingInForm {
+.Sing_Form {
   width: 100%;
   text-align: center;
 }

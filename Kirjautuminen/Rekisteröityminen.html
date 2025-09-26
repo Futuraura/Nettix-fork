@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../style.css" />
-    <script src="Tuote.js" defer></script>
+    <script src="tieto.js" defer></script>
     <style>
       .container {
         display: grid;
@@ -14,9 +14,48 @@
           [row1-start] "header" 70px [row1-end]
           [row2-start] "nav" 50px [row2-end]
           [row4-start] "main" 500px [row4-end]
-          [row5-start] "space" 150px [row5-end]
+          [row5-start] "space" 0px [row5-end]
           [row6-start] "footer" 200px [row6-end]
           / 100%;
+      }
+      @media (min-width: 480px) {
+        .container {
+          display: grid;
+          height: auto;
+          grid-template:
+            [row1-start] "header" 70px [row1-end]
+            [row2-start] "nav" 50px [row2-end]
+            [row4-start] "main" 500px [row4-end]
+            [row5-start] "space" 10px [row5-end]
+            [row6-start] "footer" 200px [row6-end]
+            / 100%;
+        }
+      }
+      @media (min-width: 600px) {
+        .container {
+          display: grid;
+          height: auto;
+          grid-template:
+            [row1-start] "header" 70px [row1-end]
+            [row2-start] "nav" 50px [row2-end]
+            [row4-start] "main" 500px [row4-end]
+            [row5-start] "space" 5% [row5-end]
+            [row6-start] "footer" 200px [row6-end]
+            / 100%;
+        }
+      }
+      @media (min-width: 1024px) {
+        .container {
+          display: grid;
+          height: auto;
+          grid-template:
+            [row1-start] "header" 70px [row1-end]
+            [row2-start] "nav" 50px [row2-end]
+            [row4-start] "main" 500px [row4-end]
+            [row5-start] "space" 30% [row5-end]
+            [row6-start] "footer" 200px [row6-end]
+            / 100%;
+        }
       }
     </style>
   </head>
@@ -56,7 +95,7 @@
           <p style="font-size: 3vw; margin: 0 0 10px 0; font-weight: lighter">
             Rekisteröidy saadaksesi erikoistarjouksia
           </p>
-          <form id="SingInForm" action="">
+          <form id="SingUpForm" class="Sing_Form" action="">
             <input
               id="email"
               type="email"
@@ -81,7 +120,13 @@
                 tarjouksia. Voin peruuttaa suostumuksen milloin vain.
               </p>
             </div>
-            <button type="submit" style="margin-bottom: 2vw" class="sing">
+            <button
+              type="submit"
+              onclick="getData()"
+              onclick="sulje()"
+              style="margin-bottom: 2vw"
+              class="sing"
+            >
               Liity Nettix:n jäseneksi
             </button>
           </form>
