@@ -27,7 +27,7 @@ function listaatuotteita1() {
             }
         }
 
-        console.log(templist)
+        
 
         var mediascroller1 = document.getElementById("scroller1");
         var medialement1 = document.createElement("div");
