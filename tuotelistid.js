@@ -4,7 +4,8 @@ var tuotelistaid = [{
         nimi:"paita",
         hinta:"50",
         tuotesivunkuva:["../Kuvat/Kuva1.jpg"],
-        kuva:"Tuotteet/Kuvat/kuva1.jpg"
+        kuva:"Tuotteet/Kuvat/kuva1.jpg",
+        href:"Tuotteet/tuote1/tuotteet.html"
     },
     //---temps---
     { 
@@ -12,14 +13,16 @@ var tuotelistaid = [{
         nimi:"housu",
         hinta:"40",
         tuotesivunkuva:["../Kuvat/Kuva2.jpg"],
-        kuva:"Tuotteet/Kuvat/kuva2.jpg"
+        kuva:"Tuotteet/Kuvat/kuva2.jpg",
+        href:"Tuotteet/tuote2/tuotteet.html"
     },
     {
         tuotenumero:"3",
         nimi:"hattu",
         hinta:"41",
         tuotesivunkuva:["../Kuvat/Kuva1.jpg"],
-        kuva:"Tuotteet/Kuvat/kuva1.jpg"
+        kuva:"Tuotteet/Kuvat/kuva1.jpg",
+        href:"Tuotteet/tuote1/tuotteet.html"
     }
     //------------
 ]

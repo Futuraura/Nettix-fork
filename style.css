@@ -19,6 +19,15 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.height100 {
+  height: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 .align-content_center {
   align-content: center;
 }
