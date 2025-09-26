@@ -1,351 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lapset</title>
-    <script src = "naiset.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="design-kategoriat.css">
-</head>
-<body>
+    <script src="naiset.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="design-kategoriat.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <!--Separate grid-->
-            <div class="containerheader">
-                <div class="headermain">
-                    <input type="text" placeholder="Hae.." class="searchbar" >
-                    <button class="login">Kirjaudu sisään</button>
-                    <img src="mdi--cart.png" class="img" width="50px">
+      <div class="header">
+        <!--Separate grid-->
+        <div class="containerheader">
+          <div class="headermain">
+            <input type="text" placeholder="Hae.." class="searchbar" />
+            <a href="Kirjautuminen/Kirjautuminen.html"
+              ><button class="login">Kirjaudu sisään</button>
+            </a>
+            <img src="mdi--cart.png" class="img" width="50px" />
+          </div>
+          <div class="logomain">
+            <a href="index.html" class="headerlogo"
+              ><img src="Nettix.png" width="100%"
+            /></a>
+          </div>
+        </div>
+        <!---->
+      </div>
+      <div class="nav">
+        <a href="miehet.html" class="nav_button"><div>Miehet</div></a>
+        <a href="naiset.html" class="nav_button"><div>Naiset</div></a>
+        <a href="lapset.html" class="nav_button"><div>Lapset</div></a>
+      </div>
+      <div class="shop">
+        <div class="media-scroller flex">
+          <!--One item-->
+          <div class="media-element flex">
+            <div class="media-items">
+              <div>
+                <img src="Nettix.png" width="100%" style="align-self: center" />
+              </div>
+              <div><h2 class="itemname" style="margin: 0">test</h2></div>
+            </div>
+          </div>
+          <!---->
+          <div class="media-element flex">
+            <div class="media-items">
+              <div>
+                <img src="Nettix.png" width="100%" style="align-self: center" />
+              </div>
+              <div><h2 class="itemname" style="margin: 0">test</h2></div>
+            </div>
+          </div>
+          <div class="media-element flex">
+            <div class="media-items">
+              <div>
+                <img src="Nettix.png" width="100%" style="align-self: center" />
+              </div>
+              <div><h2 class="itemname" style="margin: 0">test</h2></div>
+            </div>
+          </div>
+          <div class="media-element flex">
+            <div class="media-items">
+              <div>
+                <img src="Nettix.png" width="100%" style="align-self: center" />
+              </div>
+              <div><h2 class="itemname" style="margin: 0">test</h2></div>
+            </div>
+          </div>
+          <div class="media-element flex">
+            <div class="media-items">
+              <div>
+                <img src="Nettix.png" width="100%" style="align-self: center" />
+              </div>
+              <div><h2 class="itemname" style="margin: 0">test</h2></div>
+            </div>
+          </div>
+          <div class="media-element flex">
+            <div class="media-items">
+              <div>
+                <img src="Nettix.png" width="100%" style="align-self: center" />
+              </div>
+              <div><h2 class="itemname" style="margin: 0">test</h2></div>
+            </div>
+          </div>
+          <div class="media-element flex">
+            <div class="media-items">
+              <div>
+                <img src="Nettix.png" width="100%" style="align-self: center" />
+              </div>
+              <div><h2 class="itemname" style="margin: 0">test</h2></div>
+            </div>
+          </div>
+          <div class="media-element flex">
+            <div class="media-items">
+              <div>
+                <img src="Nettix.png" width="100%" style="align-self: center" />
+              </div>
+              <div><h2 class="itemname" style="margin: 0">test</h2></div>
+            </div>
+          </div>
+          <div class="media-element flex">
+            <div class="media-items">
+              <div>
+                <img src="Nettix.png" width="100%" style="align-self: center" />
+              </div>
+              <div><h2 class="itemname" style="margin: 0">test</h2></div>
+            </div>
+          </div>
+          <div class="media-element flex">
+            <div class="media-items">
+              <div>
+                <img src="Nettix.png" width="100%" style="align-self: center" />
+              </div>
+              <div><h2 class="itemname" style="margin: 0">test</h2></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="catalogo">
+          <button
+            class="btn-filtros"
+            aria-controls="filtros"
+            aria-expanded="false"
+          >
+            Filters
+          </button>
+
+          <aside id="filtros" class="filtros">
+            <h3>Filters</h3>
+            <!-- Price -->
+
+            <div class="bloque">
+              <label class="lbl">Price</label>
+              <div class="rango">
+                <input
+                  type="range"
+                  id="priceFilter"
+                  min="0"
+                  max="500"
+                  value="500"
+                />
+                <div class="rango-info">
+                  <span>$0</span><span id="priceValue">$500</span>
                 </div>
-                <div class="logomain">
-                    <a href="index.html" class="headerlogo"><img src="Nettix.png" width="100%"></a>
-                </div>
+              </div>
             </div>
-            <!---->
-        </div>
-        <div class="nav">
-            <a href="miehet.html" class="nav_button"><div>Miehet</div></a>
-            <a href="naiset.html" class="nav_button"><div>Naiset</div></a>
-            <a href="lapset.html" class="nav_button"><div>Lapset</div></a>
-        </div>
-        <div class="shop">
-            <div class="media-scroller flex"> 
-                <!--One item-->
-                <div class="media-element flex">
-                    <div class="media-items">
-                        <div><img src="Nettix.png" width="100%" style="align-self: center;"></div>
-                        <div><h2 class="itemname" style="margin: 0;">test</h2></div>
-                    </div>
-                </div>  
-                <!---->
-                <div class="media-element flex">
-                    <div class="media-items">
-                        <div><img src="Nettix.png" width="100%" style="align-self: center;"></div>
-                        <div><h2 class="itemname" style="margin: 0;">test</h2></div>
-                    </div>
-                </div> 
-                <div class="media-element flex">
-                    <div class="media-items">
-                        <div><img src="Nettix.png" width="100%" style="align-self: center;"></div>
-                        <div><h2 class="itemname" style="margin: 0;">test</h2></div>
-                    </div>
-                </div> 
-                <div class="media-element flex">
-                    <div class="media-items">
-                        <div><img src="Nettix.png" width="100%" style="align-self: center;"></div>
-                        <div><h2 class="itemname" style="margin: 0;">test</h2></div>
-                    </div>
-                </div> 
-                <div class="media-element flex">
-                    <div class="media-items">
-                        <div><img src="Nettix.png" width="100%" style="align-self: center;"></div>
-                        <div><h2 class="itemname" style="margin: 0;">test</h2></div>
-                    </div>
-                </div> 
-                <div class="media-element flex">
-                    <div class="media-items">
-                        <div><img src="Nettix.png" width="100%" style="align-self: center;"></div>
-                        <div><h2 class="itemname" style="margin: 0;">test</h2></div>
-                    </div>
-                </div> 
-                <div class="media-element flex">
-                    <div class="media-items">
-                        <div><img src="Nettix.png" width="100%" style="align-self: center;"></div>
-                        <div><h2 class="itemname" style="margin: 0;">test</h2></div>
-                    </div>
-                </div> 
-                <div class="media-element flex">
-                    <div class="media-items">
-                        <div><img src="Nettix.png" width="100%" style="align-self: center;"></div>
-                        <div><h2 class="itemname" style="margin: 0;">test</h2></div>
-                    </div>
-                </div> 
-                <div class="media-element flex">
-                    <div class="media-items">
-                        <div><img src="Nettix.png" width="100%" style="align-self: center;"></div>
-                        <div><h2 class="itemname" style="margin: 0;">test</h2></div>
-                    </div>
-                </div> 
-                <div class="media-element flex">
-                    <div class="media-items">
-                        <div><img src="Nettix.png" width="100%" style="align-self: center;"></div>
-                        <div><h2 class="itemname" style="margin: 0;">test</h2></div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-        <div class="main"> 
-            <div class="catalogo"> 
-                <button class="btn-filtros" aria-controls="filtros" aria-expanded="false"> 
-                    Filters 
-                </button> 
-        
-                <aside id="filtros" class="filtros"> 
-                    <h3>Filters</h3> <!-- Price --> 
-            
-                    <div class="bloque"> 
-                        <label class="lbl">Price</label> 
-                        <div class="rango"> 
-                            <input type="range" id="priceFilter" min="0" max="500" value="500" /> 
-                            <div class="rango-info"> <span>$0</span><span id="priceValue">$500</span></div>
-                        </div> 
-                    </div> <!-- Color --> 
-            
-                    <div class="bloque"> 
-                        <label class="lbl">Color</label> 
-                        <div class="colores"> 
-                            <button class="dot" data-color="all" style="--c:linear-gradient(45deg,#000,#fff)">all</button> 
-                            <button class="dot" data-color="black" style="--c:#000"></button> 
-                            <button class="dot" data-color="white" style="--c:#fff"></button> 
-                            <button class="dot" data-color="blue" style="--c:#06c"></button> 
-                            <button class="dot" data-color="yellow"style="--c:#ff0"></button> 
-                            <button class="dot" data-color="pink" style="--c:#f6a"></button> 
-                        </div> 
-                    </div> 
-                
-                        <div class="bloque"> 
-                            <label class="lbl">Size</label> 
-                            <ul class="chips"> 
-                                 <li>
-                                    <input id="t-s" type="checkbox">
-                                    <label for="t-s">S</label>
-                                </li>
-                        
-                                <li>
-                                    <input id="t-m" type="checkbox">
-                                    <label for="t-m">M</label>
-                                </li> 
-                        
-                                <li>
-                                    <input id="t-l" type="checkbox">
-                                    <label for="t-l">L</label>
-                                </li> 
-                        
-                                <li>
-                                    <input id="t-xl" type="checkbox">
-                                    <label for="t-xl">XL</label>
-                                </li> 
-                            </ul> 
-                        </div> <!-- Dress Style --> 
-                
-                        <div class="bloque"> 
-                            <label class="lbl">Dress Style</label> 
-                            <select id="styleFilter"> 
-                                <option value="all">All</option> 
-                                <option value="casual">Casual</option> 
-                                <option value="sport">Sport</option> 
-                                <option value="formal">Formal</option> 
-                            </select> 
-                        </div> 
-                        <button class="aplicar">Apply Filters</button> 
-                    </aside> <!-- Grid products --> 
-            
-                    <section class="productos"> 
-                        <h2>LAPSET</h2> 
-                        <div class="grid">
-                            <article class="card" data-color="white" data-price="240" data-style="formal"> 
-                                <a href="#"> 
-                                    <div class="thumb" aria-hidden="true"></div> 
-                                    <h3>Skinny Fit Jeans</h3> 
-                                    <div class="precio"> 
-                                        <span class="actual">$240</span> 
-                                        <span class="tachado">$320</span> 
-                                    </div> 
-                                </a>    
-                                </article> 
-                    
-                                <article class="card" data-color="black" data-price="180" data-style="casual"> 
-                                    <a href="#"> 
-                                        <div class="thumb" aria-hidden="true"></div> 
-                                        <h3>Checked Shirt</h3> 
-                                        <div class="precio"> 
-                                            <span class="actual">$180</span> 
-                                        </div> 
-                                    </a> 
-                                </article> 
-                    
-                                <article class="card" data-color="pink" data-price="130" data-style="casual"> 
-                                    <a href="#"> 
-                                        <div class="thumb" aria-hidden="true"></div>  
-                                        <h3>Stripe T-shirt</h3> 
-                                        <div class="precio"> 
-                                            <span class="actual">$130</span> 
-                                            <span class="tachado">$160</span> 
-                                        </div> 
-                                    </a> 
-                                </article>
+            <!-- Color -->
 
-                                <article class="card" data-color="white" data-price="240" data-style="sport"> 
-                                    <a href="#"> 
-                                        <div class="thumb" aria-hidden="true"></div>  
-                                        <h3>Skinny Fit Jeans</h3> 
-                                        <div class="precio"> 
-                                            <span class="actual">$240</span> 
-                                            <span class="tachado">$320</span> 
-                                        </div> 
-                                    </a>   
-                                </article> 
-                    
-                                <article class="card" data-color="black" data-price="240" data-style="formal"> 
-                                    <a href="#"> 
-                                        <div class="thumb" aria-hidden="true"></div> 
-                                        <h3>Checked Shirt</h3> 
-                                        <div class="precio"> 
-                                            <span class="actual">$180</span> 
-                                        </div> 
-                                    </a> 
-                                </article> 
-                    
-                                <article class="card" data-color="yellow" data-price="130" data-style="casual"> 
-                                    <a href="#"> 
-                                        <div class="thumb" aria-hidden="true"></div> 
-                                        <h3>Stripe T-shirt</h3> 
-                                        <div class="precio"> 
-                                            <span class="actual">$130</span> 
-                                            <span class="tachado">$160</span> 
-                                        </div> 
-                                    </a> 
-                                </article>
-
-                                <article class="card" data-color="black" data-price="240" data-style="sport"> 
-                                    <a href="#"> 
-                                        <div class="thumb" aria-hidden="true"></div>  
-                                        <h3>Skinny Fit Jeans</h3> 
-                                        <div class="precio"> 
-                                            <span class="actual">$240</span> 
-                                            <span class="tachado">$320</span> 
-                                        </div> 
-                                    </a>   
-                                </article> 
-                    
-                                <article class="card" data-color="blue" data-price="180" data-style="formal"> 
-                                    <a href="#"> 
-                                        <div class="thumb" aria-hidden="true"></div>  
-                                        <h3>Checked Shirt</h3> 
-                                        <div class="precio"> 
-                                            <span class="actual">$180</span> 
-                                        </div> 
-                                    </a> 
-                                </article> 
-                    
-                                <article class="card" data-color="black" data-price="130" data-style="casual"> 
-                                    <a href="#"> 
-                                        <div class="thumb" aria-hidden="true"></div> 
-                                        <h3>Stripe T-shirt</h3> 
-                                        <div class="precio"> 
-                                            <span class="actual">$130</span> 
-                                            <span class="tachado">$160</span> 
-                                        </div> 
-                                    </a> 
-                                </article>
-                            </div> 
-                        </section> 
+            <div class="bloque">
+              <label class="lbl">Color</label>
+              <div class="colores">
+                <button
+                  class="dot"
+                  data-color="all"
+                  style="--c: linear-gradient(45deg, #000, #fff)"
+                >
+                  all
+                </button>
+                <button
+                  class="dot"
+                  data-color="black"
+                  style="--c: #000"
+                ></button>
+                <button
+                  class="dot"
+                  data-color="white"
+                  style="--c: #fff"
+                ></button>
+                <button
+                  class="dot"
+                  data-color="blue"
+                  style="--c: #06c"
+                ></button>
+                <button
+                  class="dot"
+                  data-color="yellow"
+                  style="--c: #ff0"
+                ></button>
+                <button
+                  class="dot"
+                  data-color="pink"
+                  style="--c: #f6a"
+                ></button>
+              </div>
             </div>
-         </div>
 
-        <div class="footer">
-            <div class="footer_list">
-                <ul>
-                    <h4>placeholder</h4>
-                    <li>text</li>
-                    <li>text</li>
-                    <li>text</li>
-                    <li>text</li>
-                </ul>
-                <ul>
-                    <h4>placeholder</h4>
-                    <li>text</li>
-                    <li>text</li>
-                    <li>text</li>
-                    <li>text</li>
-                </ul>
-                <ul>
-                    <h4>placeholder</h4>
-                    <li>text</li>
-                    <li>text</li>
-                    <li>text</li>
-                    <li>text</li>
-                </ul>
+            <div class="bloque">
+              <label class="lbl">Size</label>
+              <ul class="chips">
+                <li>
+                  <input id="t-s" type="checkbox" />
+                  <label for="t-s">S</label>
+                </li>
+
+                <li>
+                  <input id="t-m" type="checkbox" />
+                  <label for="t-m">M</label>
+                </li>
+
+                <li>
+                  <input id="t-l" type="checkbox" />
+                  <label for="t-l">L</label>
+                </li>
+
+                <li>
+                  <input id="t-xl" type="checkbox" />
+                  <label for="t-xl">XL</label>
+                </li>
+              </ul>
             </div>
+            <!-- Dress Style -->
+
+            <div class="bloque">
+              <label class="lbl">Dress Style</label>
+              <select id="styleFilter">
+                <option value="all">All</option>
+                <option value="casual">Casual</option>
+                <option value="sport">Sport</option>
+                <option value="formal">Formal</option>
+              </select>
+            </div>
+            <button class="aplicar">Apply Filters</button>
+          </aside>
+          <!-- Grid products -->
+
+          <section class="productos">
+            <h2>LAPSET</h2>
+            <div class="grid">
+              <article
+                class="card"
+                data-color="white"
+                data-price="240"
+                data-style="formal"
+              >
+                <a href="#">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <h3>Skinny Fit Jeans</h3>
+                  <div class="precio">
+                    <span class="actual">$240</span>
+                    <span class="tachado">$320</span>
+                  </div>
+                </a>
+              </article>
+
+              <article
+                class="card"
+                data-color="black"
+                data-price="180"
+                data-style="casual"
+              >
+                <a href="#">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <h3>Checked Shirt</h3>
+                  <div class="precio">
+                    <span class="actual">$180</span>
+                  </div>
+                </a>
+              </article>
+
+              <article
+                class="card"
+                data-color="pink"
+                data-price="130"
+                data-style="casual"
+              >
+                <a href="#">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <h3>Stripe T-shirt</h3>
+                  <div class="precio">
+                    <span class="actual">$130</span>
+                    <span class="tachado">$160</span>
+                  </div>
+                </a>
+              </article>
+
+              <article
+                class="card"
+                data-color="white"
+                data-price="240"
+                data-style="sport"
+              >
+                <a href="#">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <h3>Skinny Fit Jeans</h3>
+                  <div class="precio">
+                    <span class="actual">$240</span>
+                    <span class="tachado">$320</span>
+                  </div>
+                </a>
+              </article>
+
+              <article
+                class="card"
+                data-color="black"
+                data-price="240"
+                data-style="formal"
+              >
+                <a href="#">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <h3>Checked Shirt</h3>
+                  <div class="precio">
+                    <span class="actual">$180</span>
+                  </div>
+                </a>
+              </article>
+
+              <article
+                class="card"
+                data-color="yellow"
+                data-price="130"
+                data-style="casual"
+              >
+                <a href="#">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <h3>Stripe T-shirt</h3>
+                  <div class="precio">
+                    <span class="actual">$130</span>
+                    <span class="tachado">$160</span>
+                  </div>
+                </a>
+              </article>
+
+              <article
+                class="card"
+                data-color="black"
+                data-price="240"
+                data-style="sport"
+              >
+                <a href="#">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <h3>Skinny Fit Jeans</h3>
+                  <div class="precio">
+                    <span class="actual">$240</span>
+                    <span class="tachado">$320</span>
+                  </div>
+                </a>
+              </article>
+
+              <article
+                class="card"
+                data-color="blue"
+                data-price="180"
+                data-style="formal"
+              >
+                <a href="#">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <h3>Checked Shirt</h3>
+                  <div class="precio">
+                    <span class="actual">$180</span>
+                  </div>
+                </a>
+              </article>
+
+              <article
+                class="card"
+                data-color="black"
+                data-price="130"
+                data-style="casual"
+              >
+                <a href="#">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <h3>Stripe T-shirt</h3>
+                  <div class="precio">
+                    <span class="actual">$130</span>
+                    <span class="tachado">$160</span>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </section>
         </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer_list">
+          <ul>
+            <h4>placeholder</h4>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+          </ul>
+          <ul>
+            <h4>placeholder</h4>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+          </ul>
+          <ul>
+            <h4>placeholder</h4>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+          </ul>
+        </div>
+      </div>
     </div>
-</body>
-<script> 
-document.addEventListener("DOMContentLoaded", function () { 
-    const priceFilter = document.getElementById('priceFilter'); 
-    const priceValue = document.getElementById('priceValue'); 
-    const styleFilter = document.getElementById('styleFilter'); 
-    const colorBtns = document.querySelectorAll('.dot'); 
-    const applyBtn = document.querySelector('.aplicar'); 
-    const products = document.querySelectorAll('.card'); 
-    
-    let currentColor = 'all'; 
-    let currentStyle = 'all'; 
-    
-    function filtrar() { 
-        if (!priceFilter || !products.length) return; 
-        
-        const maxPrice = parseInt(priceFilter.value, 10); 
-        products.forEach(function (card) {
-            const p = parseInt(card.dataset.price || '0', 10); 
-            const c = (card.dataset.color || '').toLowerCase(); 
-            const s = (card.dataset.style || '').toLowerCase();
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const priceFilter = document.getElementById("priceFilter");
+      const priceValue = document.getElementById("priceValue");
+      const styleFilter = document.getElementById("styleFilter");
+      const colorBtns = document.querySelectorAll(".dot");
+      const applyBtn = document.querySelector(".aplicar");
+      const products = document.querySelectorAll(".card");
 
-            const okPrice = !Number.isNaN(p) && p <= maxPrice;
-            const okColor = (currentColor === 'all' || c === currentColor); 
-            const okStyle = (currentStyle === 'all' || s === currentStyle); 
-             
-            card.style.display = (okPrice && okColor && okStyle) ? '' : 'none'; 
-        }); 
-        
-        if (priceValue) { priceValue.textContent = '$' + priceFilter.value; 
-            
-        } 
-    } 
-        
-    if (priceFilter) { 
-        priceFilter.addEventListener('input', filtrar); 
-    } 
-    
-    colorBtns.forEach(function (btn) { 
-        btn.addEventListener('click', function () { 
-            currentColor = (btn.dataset.color || 'all').toLowerCase(); 
-            filtrar(); 
-        }); 
-    }); 
-    
-    if (styleFilter) { 
-        styleFilter.addEventListener('change', function () { 
-            currentStyle = (styleFilter.value || 'all').toLowerCase(); 
-            filtrar(); 
-        }); 
-    } 
-    if (applyBtn) { 
-        applyBtn.addEventListener('click', filtrar); 
-    } 
-    
-    filtrar(); 
-}); 
-</script>
+      let currentColor = "all";
+      let currentStyle = "all";
+
+      function filtrar() {
+        if (!priceFilter || !products.length) return;
+
+        const maxPrice = parseInt(priceFilter.value, 10);
+        products.forEach(function (card) {
+          const p = parseInt(card.dataset.price || "0", 10);
+          const c = (card.dataset.color || "").toLowerCase();
+          const s = (card.dataset.style || "").toLowerCase();
+
+          const okPrice = !Number.isNaN(p) && p <= maxPrice;
+          const okColor = currentColor === "all" || c === currentColor;
+          const okStyle = currentStyle === "all" || s === currentStyle;
+
+          card.style.display = okPrice && okColor && okStyle ? "" : "none";
+        });
+
+        if (priceValue) {
+          priceValue.textContent = "$" + priceFilter.value;
+        }
+      }
+
+      if (priceFilter) {
+        priceFilter.addEventListener("input", filtrar);
+      }
+
+      colorBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          currentColor = (btn.dataset.color || "all").toLowerCase();
+          filtrar();
+        });
+      });
+
+      if (styleFilter) {
+        styleFilter.addEventListener("change", function () {
+          currentStyle = (styleFilter.value || "all").toLowerCase();
+          filtrar();
+        });
+      }
+      if (applyBtn) {
+        applyBtn.addEventListener("click", filtrar);
+      }
+
+      filtrar();
+    });
+  </script>
 </html>

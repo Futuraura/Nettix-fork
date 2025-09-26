@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="Tuote.js" defer></script>
+    <style>
+      .container {
+        display: grid;
+        height: auto;
+        grid-template:
+          [row1-start] "header" 70px [row1-end]
+          [row2-start] "nav" 50px [row2-end]
+          [row4-start] "main" 500px [row4-end]
+          [row5-start] "space" 50px [row5-end]
+          [row6-start] "footer" 200px [row6-end]
+          / 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <!--Separate grid-->
+        <div class="containerheader">
+          <div class="headermain">
+            <input type="text" placeholder="Hae.." class="searchbar" />
+            <a href="Kirjautuminen.html"
+              ><button class="login">Kirjaudu sisään</button>
+            </a>
+            <a href="../ostoskori.html"
+              ><img src="../mdi--cart.png" class="img" width="50px"
+            /></a>
+          </div>
+          <div class="logomain">
+            <a href="../index.html" class="headerlogo"
+              ><img src="../Nettix.png" width="100%"
+            /></a>
+          </div>
+        </div>
+        <!---->
+      </div>
+      <div class="nav">
+        <a href="../miehet.html" class="nav_button"><div>Miehet</div></a>
+        <a href="../naiset.html" class="nav_button"><div>Naiset</div></a>
+        <a href="../lapset.html" class="nav_button"><div>Lapset</div></a>
+      </div>
+      <div class="main" id="sign_main">
+        <div class="sign_in">
+          <img src="../Nettix.png" class="sing_logo" alt="" />
+          <h2 style="font-size: 4vw; margin: 0px; font-weight: bold">
+            Tervetuloa
+          </h2>
+          <p style="font-size: 3vw; margin: 0 0 10px 0; font-weight: lighter">
+            Kirjaudu sisään jatkaaksesi
+          </p>
+          <form id="SingInForm" action="">
+            <input
+              id="email"
+              type="email"
+              placeholder="Sähköposti"
+              class="sign_field"
+            /><br />
+            <input
+              id="password"
+              type="password"
+              placeholder="Salasana"
+              class="sign_field"
+            /><br />
+            <button type="submit" class="sing">Kirjaudu</button>
+          </form>
+          <p class="rekkari">
+            Eikö ole tiliä? <a href="Rekisteröityminen.html">Rekisteröidy</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer_list">
+          <ul>
+            <h4>placeholder</h4>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+          </ul>
+          <ul>
+            <h4>placeholder</h4>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+          </ul>
+          <ul>
+            <h4>placeholder</h4>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

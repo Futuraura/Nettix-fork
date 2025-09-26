@@ -1,96 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ostoskori</title>
-    <link rel="stylesheet" href="style.css">
-    
-    
-</head>
-<body>
-     <div class="containerbasic">
-        <div class="header">
-            <!--Separate grid-->
-            <div class="containerheader">
-                <div class="headermain">
-                    <input type="text" placeholder="Hae.." class="searchbar" >
-                    <button class="login">Kirjaudu sisään</button>
-                    <a href="ostoskori.html"><img src="mdi--cart.png" class="img" width="50px"></a>
-                </div>
-                <div class="logomain">
-                    <a href="index.html" class="headerlogo"><img src="Nettix.png" width="100%"></a>
-                </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="containerbasic">
+      <div class="header">
+        <!--Separate grid-->
+        <div class="containerheader">
+          <div class="headermain">
+            <input type="text" placeholder="Hae.." class="searchbar" />
+            <a href="Kirjautuminen/Kirjautuminen.html"
+              ><button class="login">Kirjaudu sisään</button>
+            </a>
+            <a href="ostoskori.html"
+              ><img src="mdi--cart.png" class="img" width="50px"
+            /></a>
+          </div>
+          <div class="logomain">
+            <a href="index.html" class="headerlogo"
+              ><img src="Nettix.png" width="100%"
+            /></a>
+          </div>
+        </div>
+        <!---->
+      </div>
+
+      <div class="nav">
+        <a href="miehet.html" class="nav_button"><div>Miehet</div></a>
+        <a href="naiset.html" class="nav_button"><div>Naiset</div></a>
+        <a href="lapset.html" class="nav_button"><div>Lapset</div></a>
+      </div>
+
+      <div class="main">
+        <div class="containercart">
+          <div class="product">
+            <div class="flexcart" id="flexcart"></div>
+          </div>
+          <div class="info2">
+            <h2>Tilausyhteenveto</h2>
+            <div class="lunastamisflex">
+              <h2 style="text-align: left; font-size: medium; margin: 0">
+                <button class="lunastamisnappi">
+                  <img
+                    src="Ostoskorikuvat/lahjapaketti.png"
+                    height="20px"
+                    style="vertical-align: middle"
+                  />
+                  <span
+                    style="
+                      vertical-align: middle;
+                      font-family: Arial, Helvetica, sans-serif;
+                      font-size: 16px;
+                    "
+                    >Lunasta lahjakortti</span
+                  >
+                </button>
+              </h2>
+              <h2 style="text-align: right; font-size: medium; margin: 0">
+                <button
+                  class="lunastamisnappi"
+                  id="open-dialog"
+                  onclick="opendial(event)"
+                >
+                  <img
+                    src="Ostoskorikuvat/kuponki.png"
+                    height="20px"
+                    style="vertical-align: middle"
+                  />
+                  <span
+                    style="
+                      vertical-align: middle;
+                      font-family: Arial, Helvetica, sans-serif;
+                      font-size: 16px;
+                    "
+                    >Lunasta kampanjakoodi</span
+                  >
+                </button>
+              </h2>
             </div>
-            <!---->
-        </div>
-
-        <div class="nav">
-            <a href="miehet.html" class="nav_button"><div>Miehet</div></a>
-            <a href="naiset.html" class="nav_button"><div>Naiset</div></a>
-            <a href="lapset.html" class="nav_button"><div>Lapset</div></a>
-        </div>
-
-        <div class="main">
-            <div class="containercart">
-                <div class="product">
-                    <div class="flexcart" id="flexcart">
-                    </div>
-                </div>
-                <div class="info2">
-                    <h2>Tilausyhteenveto</h2>
-                    <div class="lunastamisflex">
-                        <h2 style="text-align: left; font-size: medium; margin: 0;">
-                            <button class="lunastamisnappi">
-                                <img src="Ostoskorikuvat/lahjapaketti.png" height="20px" style="vertical-align: middle;">
-                                <span style="vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Lunasta lahjakortti</span>
-                            </button> 
-                        </h2>
-                        <h2 style="text-align: right; font-size: medium; margin: 0;">
-                            <button class="lunastamisnappi" id="open-dialog" onclick="opendial(event)">
-                                <img src="Ostoskorikuvat/kuponki.png" height="20px" style="vertical-align: middle;">
-                                <span style="vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Lunasta kampanjakoodi</span>
-                            </button> 
-                        </h2>
-                    </div>
-                    <div class="line" style="margin-top: 5px; margin-bottom: 25px;"></div>
-                    <h2 style="text-align: left; font-size: medium; margin: 0; margin-bottom: 25px;">
-                        <div class="lunastamisnappi">
-                            <img src="Ostoskorikuvat/rekka.png" height="20px" style="vertical-align: middle;">
-                            <span style="vertical-align: middle; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Lisää xx.xx saavuttaaksesi ilmaisen toimituksen</span>
-                             <!-- note to self 60€ on maksimi ennen kuin teksti muuttuu -->
-                        </div> 
-                    </h2>
-                    <br>
-                    <div class="lunastamisflex">
-                        <h3 class="italic size14px margin5px" >Välisumma:</h3>
-                        <h3 class="size14px bold margin5px" id="välisumma"></h3>
-                    </div>
-                    <div class="lunastamisflex">
-                        <h3 class="italic size14px margin5px">Alennus</h3>
-                        <h3 class="size14px bold margin5px" id="alennus"></h3>
-                    </div>
-                    <div class="lunastamisflex">
-                        <h3 class="bold size14px margin5px">Yhteensä:</h3>
-                        <h3 class="size14px bold margin5px" id="yhteensä"></h3>
-                    </div>
-                    <h1 style="text-align: center; font-size: medium; margin-bottom: 10px;">
-                        <button class="ostamisnappi" id="kassa" style="padding: 0px 93.5px 0px 93.5px;"><h4>Kassa</h4></button>
-                    </h1>
-                    <dialog id="dialo" style="text-align: center;">
-                        <label for="koodi"><h2 class="size14px">Koodi</h2></label>
-                        <input type="text" id="koodi" name="koodi">
-                        <br>
-                        <br>
-
-                        <button class="buttonnorm" onclick="closedial(event)">valmis</button>
-                    </dialog>
-                </div>
+            <div
+              class="line"
+              style="margin-top: 5px; margin-bottom: 25px"
+            ></div>
+            <h2
+              style="
+                text-align: left;
+                font-size: medium;
+                margin: 0;
+                margin-bottom: 25px;
+              "
+            >
+              <div class="lunastamisnappi">
+                <img
+                  src="Ostoskorikuvat/rekka.png"
+                  height="20px"
+                  style="vertical-align: middle"
+                />
+                <span
+                  style="
+                    vertical-align: middle;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                  "
+                  >Lisää xx.xx saavuttaaksesi ilmaisen toimituksen</span
+                >
+                <!-- note to self 60€ on maksimi ennen kuin teksti muuttuu -->
+              </div>
+            </h2>
+            <br />
+            <div class="lunastamisflex">
+              <h3 class="italic size14px margin5px">Välisumma:</h3>
+              <h3 class="size14px bold margin5px" id="välisumma"></h3>
             </div>
+            <div class="lunastamisflex">
+              <h3 class="italic size14px margin5px">Alennus</h3>
+              <h3 class="size14px bold margin5px" id="alennus"></h3>
+            </div>
+            <div class="lunastamisflex">
+              <h3 class="bold size14px margin5px">Yhteensä:</h3>
+              <h3 class="size14px bold margin5px" id="yhteensä"></h3>
+            </div>
+            <h1
+              style="text-align: center; font-size: medium; margin-bottom: 10px"
+            >
+              <button
+                class="ostamisnappi"
+                id="kassa"
+                style="padding: 0px 93.5px 0px 93.5px"
+              >
+                <h4>Kassa</h4>
+              </button>
+            </h1>
+            <dialog id="dialo" style="text-align: center">
+              <label for="koodi"><h2 class="size14px">Koodi</h2></label>
+              <input type="text" id="koodi" name="koodi" />
+              <br />
+              <br />
+
+              <button class="buttonnorm" onclick="closedial(event)">
+                valmis
+              </button>
+            </dialog>
+          </div>
         </div>
-        
+      </div>
     </div>
-    <script src = "tuotelistid.js"></script>
-    <script src = "ostoskori.js"></script>
-</body>
+    <script src="tuotelistid.js"></script>
+    <script src="ostoskori.js"></script>
+  </body>
 </html>
