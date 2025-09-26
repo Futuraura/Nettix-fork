@@ -95,15 +95,20 @@
           <p style="font-size: 3vw; margin: 0 0 10px 0; font-weight: lighter">
             Kirjaudu sisään jatkaaksesi
           </p>
-          <form id="SingInForm" class="Sing_Form" action="">
+          <form
+            id="SingInForm"
+            onsubmit="SignIn(event)"
+            class="Sing_Form"
+            action=""
+          >
             <input
-              id="email"
+              id="K_email"
               type="email"
               placeholder="Sähköposti"
               class="sign_field"
             /><br />
             <input
-              id="password"
+              id="K_password"
               type="password"
               placeholder="Salasana"
               class="sign_field"

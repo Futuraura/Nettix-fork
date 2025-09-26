@@ -95,15 +95,20 @@
           <p style="font-size: 3vw; margin: 0 0 10px 0; font-weight: lighter">
             Rekisteröidy saadaksesi erikoistarjouksia
           </p>
-          <form id="SingUpForm" class="Sing_Form" action="">
+          <form
+            onsubmit="getData(event)"
+            id="SingUpForm"
+            class="Sing_Form"
+            action=""
+          >
             <input
-              id="email"
+              id="R_email"
               type="email"
               placeholder="Sähköposti"
               class="sign_field"
             /><br />
             <input
-              id="password"
+              id="R_password"
               type="password"
               placeholder="Salasana"
               class="sign_field"
@@ -112,6 +117,7 @@
               type="password"
               placeholder="Vahvista salasana"
               class="sign_field"
+              id="confirmPassword"
             /><br />
             <div id="sign_up_check">
               <input type="checkbox" id="tarjous" name="checkbox" />
@@ -120,13 +126,7 @@
                 tarjouksia. Voin peruuttaa suostumuksen milloin vain.
               </p>
             </div>
-            <button
-              type="submit"
-              onclick="getData()"
-              onclick="sulje()"
-              style="margin-bottom: 2vw"
-              class="sing"
-            >
+            <button type="submit" style="margin-bottom: 2vw" class="sing">
               Liity Nettix:n jäseneksi
             </button>
           </form>
