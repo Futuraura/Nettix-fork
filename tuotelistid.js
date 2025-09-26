@@ -18,11 +18,11 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"3",
-        nimi:"hattu",
-        hinta:"41",
-        tuotesivunkuva:["../Kuvat/Kuva1.jpg"],
-        kuva:"Tuotteet/Kuvat/kuva1.jpg",
-        href:"Tuotteet/tuote1/tuotteet.html"
+        nimi:"paita_2",
+        hinta:"25",
+        tuotesivunkuva:["../Kuvat/Kuva3.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva3.jpg",
+        href:"Tuotteet/tuote3/tuotteet.html"
     }
     //------------
 ]

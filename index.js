@@ -1,8 +1,8 @@
 var tuotelista = JSON.parse(localStorage.getItem("listaidref"));
 
-var rivi1tuotteet = [2,2,1,1,2,2,1,1]
+var rivi1tuotteet = [3,2,1,3,2,1,3,2,1]
 
-var rivi2tuotteet = [1,1,2,2,1,1,2,2]
+var rivi2tuotteet = [1,2,3,1,2,3,1,2,3]
 
 
 
