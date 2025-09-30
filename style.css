@@ -331,10 +331,18 @@ a {
   display: flex;
   width: 100%;
   gap: 20px;
+  padding-bottom: -10px;
+  background-color: #483aa0;
+}
+.footer_list a {
+  text-decoration: none;
+  color: white;
 }
 .footer_list h4 {
   text-align: center;
   width: 100%;
+  font-size: 4vw;
+  font-weight: bolder;
 }
 
 .footer_list ul {
@@ -344,13 +352,12 @@ a {
   list-style-type: none;
   list-style-type: none;
   margin: 0px;
+  gap: 2vw;
   padding-left: 0;
 }
 
 .footer_list li {
   text-align: center;
-  min-width: 0;
-  word-break: break-word;
 }
 .shop {
   grid-area: shop;
@@ -658,22 +665,26 @@ input:focus {
   display: flex;
   flex-direction: row;
   background-color: #483aa0;
+  gap: 20px;
+  align-items: center;
 }
 .paymethods img,
 .transport img {
-  width: 37px;
+  width: 10vw;
   height: 100%;
   background-color: white;
 }
 .footer_text {
   background-color: #483aa0;
+  font-size: 25px;
+  color: white;
+  font-weight: bolder;
 }
 .footer .footer_text,
 .footer .paymethods,
 .footer .transport {
-  text-align: center;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  text-align: left;
+  padding: 2vw 2vw 2vw 2vw;
 }
 @media (min-width: 480px) {
   .side {
@@ -743,5 +754,14 @@ input:focus {
   #tarjous {
     width: 50px;
     height: 50px;
+  }
+  .paymethods img,
+  .transport img {
+    width: 100px;
+    height: 100%;
+    background-color: white;
+  }
+  .footer_text {
+    font-size: 30px;
   }
 }
