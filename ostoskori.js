@@ -3,6 +3,8 @@ var lista = JSON.parse(localStorage.getItem("ostoskorissa"));
 var tuotelista = JSON.parse(localStorage.getItem("listaidref"));
 var alennuskoodit = JSON.parse(localStorage.getItem("koodit"));
 
+var hintayhteensä = 0
+
 function closedial(event) {
     
    
@@ -10,6 +12,7 @@ function closedial(event) {
     event.preventDefault()
     dialog.close()
     Yhteensä();
+    toimitus();
 }
 
 function opendial(event) {
@@ -130,6 +133,7 @@ function lisääTuote() {
             localStorage.setItem("ostoskorissa", JSON.stringify(lista));
             lista = JSON.parse(localStorage.getItem("ostoskorissa"));
             Yhteensä();
+            toimitus();
           }
           k += 1;
         }
@@ -206,6 +210,7 @@ function Yhteensä() {
     total += Number(temps.määrä) * Number(temps.hinta);
   }
   Välisumma.innerHTML = total + " €";
+  hintayhteensä = total
 
   alennustemp = [
     {
@@ -244,5 +249,26 @@ function Yhteensä() {
   
 }
 
+function toimitus() {
+
+  var kuljetus1 = document.getElementById("toimitus1");
+  var kuljetus2 = document.getElementById("toimitus2");
+  var ilmainen = document.getElementById("ilmainen");
+
+  if (hintayhteensä >= 60) {
+    kuljetus1.innerHTML = "ilmainen toimitus saavutettu"
+    kuljetus2.innerHTML = ""
+    ilmainen.innerHTML = ""
+    console.log("2222222222222")
+  }
+  else if (hintayhteensä < 60) {
+    kuljetus1.innerHTML = "Lisää "
+    ilmainen.innerHTML = 60 - hintayhteensä
+    kuljetus2.innerHTML = "€ saavuttaaksesi ilmaisen toimituksen"
+    console.log("11111111111111")
+  }
+}
+
 lisääTuote();
 Yhteensä();
+toimitus();
