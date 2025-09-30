@@ -85,7 +85,7 @@ a {
   grid-template:
     [row1-start] "header" 70px [row1-end]
     [row2-start] "nav" 50px [row2-end]
-    [row3-start] "main" 500px [row3-end]
+    [row3-start] "main" auto [row3-end]
     [row4-start] "footer" 200px [row4-end]
     / 100%;
 }
