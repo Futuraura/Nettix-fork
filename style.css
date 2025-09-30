@@ -204,8 +204,8 @@ a {
   padding-left: 5%;
   align-self: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0px;
   height: 100%;
   width: 90%;
   display: grid;
@@ -234,9 +234,10 @@ a {
   text-align: left;
   margin-bottom: 10px;
   margin-top: 10px;
-  /* Temp part*/
-  background-color: #00ff22;
-  /*Temp part*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vw;
 }
 .main {
   grid-area: main;
@@ -264,9 +265,10 @@ a {
   text-align: left;
   margin-bottom: 10px;
   margin-top: 10px;
-  /* Temp part*/
-  background-color: #00ff22;
-  /*Temp part*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vw;
 }
 .main2 {
   grid-area: main2;
@@ -709,6 +711,13 @@ input:focus {
   }
   .sign_in {
     width: 100%;
+  }
+
+  .side img {
+    height: 25vw;
+  }
+  .side2 img {
+    width: 25vw;
   }
 }
 @media (min-width: 600px) {
