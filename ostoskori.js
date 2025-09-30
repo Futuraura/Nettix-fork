@@ -1,6 +1,25 @@
 var lista = JSON.parse(localStorage.getItem("ostoskorissa"));
 
 var tuotelista = JSON.parse(localStorage.getItem("listaidref"));
+var alennuskoodit = JSON.parse(localStorage.getItem("koodit"));
+
+function closedial(event) {
+    
+   
+    dialog = document.getElementById("dialo")
+    event.preventDefault()
+    dialog.close()
+    Yhteensä();
+}
+
+function opendial(event) {
+    
+    dialog = document.getElementById("dialo");
+    event.preventDefault()
+    dialog.showModal();
+    
+}
+
 
 function lisääTuote() {
   for (var list of lista) {
@@ -166,6 +185,9 @@ function lisääTuote() {
 
 function Yhteensä() {
   var Yhteensä = document.getElementById("yhteensä");
+  var Välisumma = document.getElementById("välisumma");
+  var Alennus = document.getElementById("alennus");
+  var laitettukoodi = document.getElementById("koodi").value
   var total = 0;
   total = 0;
   for (var list of lista) {
@@ -182,10 +204,44 @@ function Yhteensä() {
       }
     }
     total += Number(temps.määrä) * Number(temps.hinta);
-    console.log(temps.määrä);
-    console.log(total);
   }
-  Yhteensä.innerHTML = total + " €";
+  Välisumma.innerHTML = total + " €";
+
+  alennustemp = [
+    {
+      määrä:"",
+      prosentti:""
+    }
+  ]
+
+  for (var koodi1 of alennuskoodit) {
+    if (koodi1.nimi === laitettukoodi) {
+      alennustemp.määrä = koodi1.määrä;
+      alennustemp.prosentti = koodi1.prosentti;
+        if (alennustemp.prosentti === true) {
+          Alennus.innerHTML = "-"+koodi1.määrä +"%"
+          total = Number(total) / 100;
+          total = total * Number(koodi1.määrä);
+          Yhteensä.innerHTML = total + " €"
+          
+        }
+        if (alennustemp.prosentti === false) {
+          Alennus.innerHTML = "-"+koodi1.määrä +" €"
+          total = Number(total) - Number(koodi1.määrä);
+          Yhteensä.innerHTML = total + " €"
+          
+        }
+    }
+    if (alennustemp.määrä == null) {
+      Alennus.innerHTML = "0 €"
+      Yhteensä.innerHTML = total + " €"
+      
+    }
+    
+  }
+
+  
+  
 }
 
 lisääTuote();
