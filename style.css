@@ -70,9 +70,9 @@ a {
   grid-template:
     [row1-start] "header" 70px [row1-end]
     [row2-start] "nav" 50px [row2-end]
-    [row3-start] "shop" 190px [row3-end]
+    [row3-start] "shop" 180px [row3-end]
     [row4-start] "main" 500px [row4-end]
-    [row5-start] "shop2" 190px [row5-end]
+    [row5-start] "shop2" 180px [row5-end]
     [row6-start] "main2" 500px [row6-end]
     [row7-start] "footer" 200px [row7-end]
     / 100%;
