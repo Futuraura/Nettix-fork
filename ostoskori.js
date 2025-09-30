@@ -209,6 +209,8 @@ function Yhteensä() {
     }
     total += Number(temps.määrä) * Number(temps.hinta);
   }
+
+  total = Math.round(total * 100) / 100
   Välisumma.innerHTML = total + " €";
   hintayhteensä = total
 
@@ -263,9 +265,9 @@ function toimitus() {
   }
   else if (hintayhteensä < 60) {
     kuljetus1.innerHTML = "Lisää "
-    ilmainen.innerHTML = 60 - hintayhteensä
+    ilmainen.innerHTML = Math.round((60 - hintayhteensä)*100) / 100
     kuljetus2.innerHTML = "€ saavuttaaksesi ilmaisen toimituksen"
-    console.log("11111111111111")
+    
   }
 }
 
