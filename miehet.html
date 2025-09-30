@@ -59,7 +59,7 @@
                   value="500"
                 />
                 <div class="rango-info">
-                  <span>$0</span><span id="priceValue">$500</span>
+                  <span>0€</span><span id="priceValue">500€</span>
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@
         });
 
         if (priceValue) {
-          priceValue.textContent = "$" + priceFilter.value;
+          priceValue.textContent = priceFilter.value + "€";
         }
       }
 

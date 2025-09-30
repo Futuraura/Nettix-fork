@@ -2,32 +2,39 @@
 var tuotelistaid = [{
         tuotenumero:"1",
         nimi:"paita",
-        hinta:"50",
+        hinta:"11,99",
         tuotesivunkuva:["../Kuvat/Kuva1.jpg"],
         kuva:"Tuotteet/Kuvat/kuva1.jpg",
         href:"Tuotteet/tuote1/tuotteet.html",
         tyyli:"casual"
     },
-    //---temps---
     { 
         tuotenumero:"2",
         nimi:"housu",
-        hinta:"40",
+        hinta:"24,99",
         tuotesivunkuva:["../Kuvat/Kuva2.jpg"],
         kuva:"Tuotteet/Kuvat/kuva2.jpg",
         href:"Tuotteet/tuote2/tuotteet.html",
-        tyyli:"sport"
+        tyyli:"casual"
     },
     {
         tuotenumero:"3",
-        nimi:"paita_2",
-        hinta:"25",
+        nimi:"urheilu T-paita",
+        hinta:"29,99",
         tuotesivunkuva:["../Kuvat/Kuva3.jpg"],
         kuva:"Tuotteet/Kuvat/kuva3.jpg",
         href:"Tuotteet/tuote3/tuotteet.html",
-        tyyli:"formal"
+        tyyli:"sport"
+    },
+    {
+        tuotenumero:"4",
+        nimi:"Kuvio shortsit",
+        hinta:"51,99",
+        tuotesivunkuva:["../Kuvat/Kuva4.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva4.jpg",
+        href:"Tuotteet/tuote4/tuotteet.html",
+        tyyli:"casual"
     }
-    //------------
 ]
 
 

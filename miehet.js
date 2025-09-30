@@ -1,4 +1,4 @@
-var tuotteita = [1,2,3,1,1,1,1]
+var tuotteita = [1,2,3,4]
 
 var tuotelista = JSON.parse(localStorage.getItem("listaidref"));
 
