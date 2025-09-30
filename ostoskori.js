@@ -228,14 +228,14 @@ function Yhteensä() {
         if (alennustemp.prosentti === true) {
           Alennus.innerHTML = "-"+koodi1.määrä +"%"
           total = Number(total) / 100;
-          total = total * Number(koodi1.määrä);
-          Yhteensä.innerHTML = total + " €"
+          total = total * Number(100 - koodi1.määrä);
+          Yhteensä.innerHTML = Math.round(total * 100) / 100+ " €"
           
         }
         if (alennustemp.prosentti === false) {
           Alennus.innerHTML = "-"+koodi1.määrä +" €"
           total = Number(total) - Number(koodi1.määrä);
-          Yhteensä.innerHTML = total + " €"
+          Yhteensä.innerHTML = Math.round(total * 100) / 100 + " €"
           
         }
     }
