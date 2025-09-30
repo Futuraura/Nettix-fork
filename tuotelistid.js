@@ -5,7 +5,8 @@ var tuotelistaid = [{
         hinta:"50",
         tuotesivunkuva:["../Kuvat/Kuva1.jpg"],
         kuva:"Tuotteet/Kuvat/kuva1.jpg",
-        href:"Tuotteet/tuote1/tuotteet.html"
+        href:"Tuotteet/tuote1/tuotteet.html",
+        tyyli:"casual"
     },
     //---temps---
     { 
@@ -14,7 +15,8 @@ var tuotelistaid = [{
         hinta:"40",
         tuotesivunkuva:["../Kuvat/Kuva2.jpg"],
         kuva:"Tuotteet/Kuvat/kuva2.jpg",
-        href:"Tuotteet/tuote2/tuotteet.html"
+        href:"Tuotteet/tuote2/tuotteet.html",
+        tyyli:"sport"
     },
     {
         tuotenumero:"3",
@@ -22,7 +24,8 @@ var tuotelistaid = [{
         hinta:"25",
         tuotesivunkuva:["../Kuvat/Kuva3.jpg"],
         kuva:"Tuotteet/Kuvat/kuva3.jpg",
-        href:"Tuotteet/tuote3/tuotteet.html"
+        href:"Tuotteet/tuote3/tuotteet.html",
+        tyyli:"formal"
     }
     //------------
 ]
@@ -57,4 +60,9 @@ localStorage.setItem("listaidref", JSON.stringify(tuotelistaid));
 //        hinta:"40",
 //        tuotesivunkuva:["../Kuvat/Kuva2.jpg"],
 //        kuva:"Tuotteet/Kuvat/kuva1.jpg"
+//        href:"Tuotteet/tuote2/tuotteet.html"
+//        tyyli:"casual"
 //    }
+
+//        tyyli vaihtoehdot:
+//        casual, sport ja formal 
