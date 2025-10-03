@@ -1,5 +1,15 @@
 
-var tuotelistaid = [{
+var tuotelistaid = [
+    { 
+        tuotenumero:"999",
+        nimi:"testi",
+        hinta:"200",
+        tuotesivunkuva:["../Kuvat/Kuva2.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva2.jpg",
+        href:"Tuotteet/tuote2/tuotteet.html",
+        tyyli:"casual"
+    },
+    {
         tuotenumero:"1",
         nimi:"paita",
         hinta:"11.99",
@@ -208,7 +218,7 @@ var alennuskoodi = [
     },
     {
     nimi:"testi2",
-    määrä:"50",
+    määrä:"2.5",
     prosentti:true
     },
     {
