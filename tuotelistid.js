@@ -34,6 +34,33 @@ var tuotelistaid = [{
         kuva:"Tuotteet/Kuvat/kuva4.jpg",
         href:"Tuotteet/tuote4/tuotteet.html",
         tyyli:"casual"
+    },
+    {
+        tuotenumero:"5",
+        nimi:"Heather Grey Crewneck T-Shirt",
+        hinta:"24.99",
+        tuotesivunkuva:["../Kuvat/Kuva5.png"],
+        kuva:"Tuotteet/Kuvat/kuva5.png",
+        href:"Tuotteet/tuote5/tuotteet.html",
+        tyyli:"casual"
+    },
+    {
+        tuotenumero:"6",
+        nimi:"Taupe A-Line Dress",
+        hinta:"39.99",
+        tuotesivunkuva:["../Kuvat/Kuva6.png"],
+        kuva:"Tuotteet/Kuvat/kuva6.png",
+        href:"Tuotteet/tuote6/tuotteet.html",
+        tyyli:"formal"
+    },
+    {
+        tuotenumero:"7",
+        nimi:"Heather Grey Shirt",
+        hinta:"29.99",
+        tuotesivunkuva:["../Kuvat/Kuva7.png"],
+        kuva:"Tuotteet/Kuvat/kuva7.png",
+        href:"Tuotteet/tuote7/tuotteet.html",
+        tyyli:"casual"
     }
 ]
 
