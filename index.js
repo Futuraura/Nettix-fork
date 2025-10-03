@@ -1,6 +1,6 @@
 var tuotelista = JSON.parse(localStorage.getItem("listaidref"));
 
-var rivi1tuotteet = [1, 2, 3, 4, 5, 6, 7];
+var rivi1tuotteet = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
 
 var rivi2tuotteet = [1, 2, 4, 3, 1, 1, 2, 2];
 
@@ -40,7 +40,12 @@ function listaatuotteita1() {
     img1.classList.add("align-content-center");
     img1.src = templist.kuva;
 
-    div1.appendChild(img1);
+    var a2 = document.createElement("a");
+    a2.classList.add("link");
+    a2.href = templist.href;
+
+    a2.appendChild(img1)
+    div1.appendChild(a2);
 
     var div2 = document.createElement("div");
     var h2 = document.createElement("h2");
@@ -101,7 +106,12 @@ function listaatuotteita2() {
     img1.classList.add("align-content-center");
     img1.src = templist.kuva;
 
-    div1.appendChild(img1);
+    var a2 = document.createElement("a");
+    a2.classList.add("link");
+    a2.href = templist.href;
+
+    a2.appendChild(img1)
+    div1.appendChild(a2);
 
     var div2 = document.createElement("div");
     var h2 = document.createElement("h2");

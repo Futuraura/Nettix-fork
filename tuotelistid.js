@@ -70,6 +70,132 @@ var tuotelistaid = [{
         kuva:"Tuotteet/Kuvat/kuva8.png",
         href:"Tuotteet/tuote8/tuotteet.html",
         tyyli:"casual"
+    },
+    {
+        tuotenumero:"9",
+        nimi:"Mahogany jacket",
+        hinta:"89.99",
+        tuotesivunkuva:["../Kuvat/Kuva9.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva9.jpg",
+        href:"Tuotteet/tuote9/tuotteet.html",
+        tyyli:"casual"
+    },
+    {
+        tuotenumero:"10",
+        nimi:"jacket",
+        hinta:"99.99",
+        tuotesivunkuva:["../Kuvat/Kuva10.webp"],
+        kuva:"Tuotteet/Kuvat/kuva10.webp",
+        href:"Tuotteet/tuote10/tuotteet.html",
+        tyyli:"formal"
+    },
+    {
+        tuotenumero:"11",
+        nimi:"urheilu shortsit",
+        hinta:"26.99",
+        tuotesivunkuva:["../Kuvat/Kuva11.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva11.jpg",
+        href:"Tuotteet/tuote11/tuotteet.html",
+        tyyli:"casual"
+    },
+    {
+        tuotenumero:"12",
+        nimi:"white sneakers",
+        hinta:"59.99",
+        tuotesivunkuva:["../Kuvat/Kuva12.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva12.jpg",
+        href:"Tuotteet/tuote12/tuotteet.html",
+        tyyli:"casual"
+    },
+    {
+        tuotenumero:"13",
+        nimi:"black sneakers",
+        hinta:"64.99",
+        tuotesivunkuva:["../Kuvat/Kuva13.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva13.jpg",
+        href:"Tuotteet/tuote13/tuotteet.html",
+        tyyli:"formal"
+    },
+    {
+        tuotenumero:"14",
+        nimi:"running shoes",
+        hinta:"78.99",
+        tuotesivunkuva:["../Kuvat/Kuva14.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva14.jpg",
+        href:"Tuotteet/tuote14/tuotteet.html",
+        tyyli:"sport"
+    },
+    {
+        tuotenumero:"15",
+        nimi:"winter hat",
+        hinta:"18.99",
+        tuotesivunkuva:["../Kuvat/Kuva15.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva15.jpg",
+        href:"Tuotteet/tuote15/tuotteet.html",
+        tyyli:"casual"
+    },
+    {
+        tuotenumero:"16",
+        nimi:"cap",
+        hinta:"15.99",
+        tuotesivunkuva:["../Kuvat/Kuva16.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva16.jpg",
+        href:"Tuotteet/tuote16/tuotteet.html",
+        tyyli:"casual"
+    },
+    {
+        tuotenumero:"17",
+        nimi:"summer straw hat",
+        hinta:"24.99",
+        tuotesivunkuva:["../Kuvat/Kuva17.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva17.jpg",
+        href:"Tuotteet/tuote17/tuotteet.html",
+        tyyli:"casual"
+    },
+    {
+        tuotenumero:"18",
+        nimi:"dress hat",
+        hinta:"30.99",
+        tuotesivunkuva:["../Kuvat/Kuva18.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva18.jpg",
+        href:"Tuotteet/tuote18/tuotteet.html",
+        tyyli:"formal"
+    },
+    {
+        tuotenumero:"19",
+        nimi:"suit jacket",
+        hinta:"50.99",
+        tuotesivunkuva:["../Kuvat/Kuva19.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva19.jpg",
+        href:"Tuotteet/tuote19/tuotteet.html",
+        tyyli:"formal"
+    },
+    {
+        tuotenumero:"20",
+        nimi:"suit pants",
+        hinta:"49.99",
+        tuotesivunkuva:["../Kuvat/Kuva20.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva20.jpg",
+        href:"Tuotteet/tuote20/tuotteet.html",
+        tyyli:"formal"
+    },
+    {
+        tuotenumero:"21",
+        nimi:"collar shirt",
+        hinta:"35.99",
+        tuotesivunkuva:["../Kuvat/Kuva21.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva21.jpg",
+        href:"Tuotteet/tuote21/tuotteet.html",
+        tyyli:"formal"
+    },
+    {
+        tuotenumero:"22",
+        nimi:"formal dress",
+        hinta:"119.99",
+        tuotesivunkuva:["../Kuvat/Kuva22.jpg"],
+        kuva:"Tuotteet/Kuvat/kuva22.jpg",
+        href:"Tuotteet/tuote22/tuotteet.html",
+        tyyli:"formal"
     }
 ]
 
