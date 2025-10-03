@@ -214,7 +214,6 @@ a {
     / 67% 33%;
 }
 .containermain2 {
-  padding-left: 5%;
   align-self: center;
   align-items: center;
   padding-top: 20px;
@@ -257,7 +256,7 @@ a {
   text-align: left;
   align-items: center;
   margin: auto;
-  margin-left: 20px;
+  margin-left: 20vw;
 }
 
 .side2 {
@@ -268,7 +267,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 2vw;
+  margin-left: 10vw;
 }
 .main2 {
   grid-area: main2;
@@ -717,7 +716,7 @@ input:focus {
     height: 25vw;
   }
   .side2 img {
-    width: 25vw;
+    height: 25vw;
   }
 }
 @media (min-width: 600px) {
