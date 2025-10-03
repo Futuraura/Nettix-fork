@@ -22,7 +22,7 @@ function listaatuotteita1() {
       }
     }
 
-    console.log(templist);
+    
 
     var mediascroller1 = document.getElementById("scroller1");
     var medialement1 = document.createElement("div");
@@ -35,7 +35,6 @@ function listaatuotteita1() {
     var div1 = document.createElement("div");
     div1.classList.add("height100");
     var img1 = document.createElement("img");
-    img1.classList.add("width100");
     img1.classList.add("height100");
     img1.classList.add("align-content-center");
     img1.src = templist.kuva;
@@ -88,7 +87,7 @@ function listaatuotteita2() {
       }
     }
 
-    console.log(templist);
+    
 
     var mediascroller1 = document.getElementById("scroller2");
     var medialement1 = document.createElement("div");
@@ -101,7 +100,6 @@ function listaatuotteita2() {
     var div1 = document.createElement("div");
     div1.classList.add("height100");
     var img1 = document.createElement("img");
-    img1.classList.add("width100");
     img1.classList.add("height100");
     img1.classList.add("align-content-center");
     img1.src = templist.kuva;

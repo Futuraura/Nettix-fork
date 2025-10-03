@@ -76,3 +76,27 @@ form.addEventListener("submit", function(event) {
         }
     }
 });
+
+function test() {
+
+    var tuotenumerolista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+    for (var tuotenumero2 of tuotenumerolista) {
+        var numero = getRandomInt(100000000000)
+
+        var tuotekoriin = {
+            tuotenumero:tuotenumero2,
+            väri:"valkoinen",
+            koko:30,
+            määrä:1,
+            randid:numero
+        }
+
+        if (tuotekoriin.väri !== null){
+            if (tuotekoriin.koko !== null){
+                var kori = JSON.parse(localStorage.getItem("ostoskorissa"));
+                kori.push(tuotekoriin);
+                localStorage.setItem("ostoskorissa", JSON.stringify(kori));
+            }
+        }
+    }
+}

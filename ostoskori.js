@@ -261,7 +261,6 @@ function toimitus() {
     kuljetus1.innerHTML = "ilmainen toimitus saavutettu"
     kuljetus2.innerHTML = ""
     ilmainen.innerHTML = ""
-    console.log("2222222222222")
   }
   else if (hintayhteensä < 60) {
     kuljetus1.innerHTML = "Lisää "
