@@ -778,4 +778,7 @@ input:focus {
   .headermain {
     padding-bottom: 2vw;
   }
+  .headerlogo img {
+    margin-bottom: 2vw;
+  }
 }
