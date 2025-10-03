@@ -1,8 +1,8 @@
 var tuotelista = JSON.parse(localStorage.getItem("listaidref"));
 
-var rivi1tuotteet = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
+var rivi1tuotteet = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
-var rivi2tuotteet = [1, 2, 4, 3, 1, 1, 2, 2];
+var rivi2tuotteet = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22];
 
 function listaatuotteita1() {
   for (var rivi1tuote of rivi1tuotteet) {

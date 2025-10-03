@@ -23,6 +23,13 @@ function opendial(event) {
     
 }
 
+var ostoskori = localStorage.getItem("ostoskorissa");
+
+if (ostoskori == null) {
+        var ostoskoria = [];
+        localStorage.setItem("ostoskorissa", JSON.stringify(ostoskoria));
+    }
+
 
 function lisääTuote() {
   for (var list of lista) {
