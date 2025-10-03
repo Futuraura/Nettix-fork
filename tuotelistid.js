@@ -106,7 +106,7 @@ var tuotelistaid = [
         tuotesivunkuva:["../Kuvat/Kuva11.jpg"],
         kuva:"Tuotteet/Kuvat/kuva11.jpg",
         href:"Tuotteet/tuote11/tuotteet.html",
-        tyyli:"casual"
+        tyyli:"sport"
     },
     {
         tuotenumero:"12",
