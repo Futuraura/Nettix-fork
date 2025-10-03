@@ -61,6 +61,15 @@ var tuotelistaid = [{
         kuva:"Tuotteet/Kuvat/kuva7.png",
         href:"Tuotteet/tuote7/tuotteet.html",
         tyyli:"casual"
+    },
+    {
+        tuotenumero:"8",
+        nimi:"Heather Grey Sweatpants",
+        hinta:"27.99",
+        tuotesivunkuva:["../Kuvat/Kuva8.png"],
+        kuva:"Tuotteet/Kuvat/kuva8.png",
+        href:"Tuotteet/tuote8/tuotteet.html",
+        tyyli:"casual"
     }
 ]
 
