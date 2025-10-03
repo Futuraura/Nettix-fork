@@ -100,3 +100,24 @@ function test() {
         }
     }
 }
+
+function test2() {
+    var numero = getRandomInt(100000000000);
+
+    var tuotekoriin = {
+            tuotenumero:999,
+            väri:"valkoinen",
+            koko:30,
+            määrä:1,
+            randid:numero
+    }
+
+    if (tuotekoriin.väri !== null){
+        if (tuotekoriin.koko !== null){
+            var kori = JSON.parse(localStorage.getItem("ostoskorissa"));
+            kori.push(tuotekoriin);
+            localStorage.setItem("ostoskorissa", JSON.stringify(kori));
+        }
+    }
+
+}
