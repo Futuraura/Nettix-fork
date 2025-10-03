@@ -137,5 +137,14 @@ function listaatuotteita2() {
 listaatuotteita1();
 listaatuotteita2();
 
-let kirjautuminen = document.getElementById("loginning");
-// kirjautumis kuvakkeen vaihto (kesken)
+window.onload = function () {
+  const storedData = localStorage.getItem("UserData");
+  if (storedData !== null) {
+    let kirjautuminen = document.getElementsByClassName("signed_div");
+    for (let i = 0; i < kirjautuminen.length; i++) {
+      kirjautuminen[i].innerHTML = "";
+      kirjautuminen[i].innerHTML =
+        '<img src="Kuvat/user.png" alt="User Image" />';
+    }
+  }
+};
