@@ -21,6 +21,7 @@ function getData(event) {
       Password: NewPassword,
       tarjous: tarjous,
     };
+    localStorage.setItem("UserData", JSON.stringify(UserData));
     window.location.href = "../index.html";
   }
 }
@@ -34,4 +35,3 @@ function SignIn(event) {
   }
   window.location.href = "../index.html";
 }
-//kesken

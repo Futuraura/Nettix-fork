@@ -687,6 +687,9 @@ input:focus {
   text-align: left;
   padding: 2vw 2vw 2vw 2vw;
 }
+.signed_div img {
+  width: 50px;
+}
 @media (min-width: 480px) {
   .side {
     width: 100%;
@@ -771,5 +774,8 @@ input:focus {
   }
   .footer_text {
     font-size: 30px;
+  }
+  .headermain {
+    padding-bottom: 2vw;
   }
 }
