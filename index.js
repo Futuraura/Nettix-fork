@@ -51,6 +51,7 @@ function listaatuotteita1() {
     a.classList.add("link");
     a.href = templist.href;
     a.innerHTML = templist.nimi;
+    a.classList.add("size18px");
 
     h2.appendChild(a);
     div2.appendChild(h2);
@@ -111,6 +112,7 @@ function listaatuotteita2() {
     a.classList.add("link");
     a.href = templist.href;
     a.innerHTML = templist.nimi;
+    a.classList.add("size18px");
 
     h2.appendChild(a);
     div2.appendChild(h2);
