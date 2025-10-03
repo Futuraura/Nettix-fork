@@ -37,7 +37,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"5",
-        nimi:"Heather Grey Crewneck T-Shirt",
+        nimi:"harmaa crewneck-paita",
         hinta:"24.99",
         tuotesivunkuva:["../Kuvat/Kuva5.png"],
         kuva:"Tuotteet/Kuvat/kuva5.png",
@@ -46,7 +46,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"6",
-        nimi:"Taupe A-Line Dress",
+        nimi:"taupe A-linjainen mekko",
         hinta:"39.99",
         tuotesivunkuva:["../Kuvat/Kuva6.png"],
         kuva:"Tuotteet/Kuvat/kuva6.png",
@@ -55,7 +55,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"7",
-        nimi:"Heather Grey Shirt",
+        nimi:"harmaa paita",
         hinta:"29.99",
         tuotesivunkuva:["../Kuvat/Kuva7.png"],
         kuva:"Tuotteet/Kuvat/kuva7.png",
@@ -64,7 +64,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"8",
-        nimi:"Heather Grey Sweatpants",
+        nimi:"harmaat verkkarit",
         hinta:"27.99",
         tuotesivunkuva:["../Kuvat/Kuva8.png"],
         kuva:"Tuotteet/Kuvat/kuva8.png",
@@ -73,7 +73,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"9",
-        nimi:"Mahogany jacket",
+        nimi:"Mahogany takki",
         hinta:"89.99",
         tuotesivunkuva:["../Kuvat/Kuva9.jpg"],
         kuva:"Tuotteet/Kuvat/kuva9.jpg",
@@ -82,7 +82,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"10",
-        nimi:"jacket",
+        nimi:"takki",
         hinta:"99.99",
         tuotesivunkuva:["../Kuvat/Kuva10.webp"],
         kuva:"Tuotteet/Kuvat/kuva10.webp",
@@ -100,7 +100,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"12",
-        nimi:"white sneakers",
+        nimi:"valkoiset lenkkarit",
         hinta:"59.99",
         tuotesivunkuva:["../Kuvat/Kuva12.jpg"],
         kuva:"Tuotteet/Kuvat/kuva12.jpg",
@@ -109,7 +109,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"13",
-        nimi:"black sneakers",
+        nimi:"mustat lenkkarit",
         hinta:"64.99",
         tuotesivunkuva:["../Kuvat/Kuva13.jpg"],
         kuva:"Tuotteet/Kuvat/kuva13.jpg",
@@ -118,7 +118,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"14",
-        nimi:"running shoes",
+        nimi:"juoksu kengät",
         hinta:"78.99",
         tuotesivunkuva:["../Kuvat/Kuva14.jpg"],
         kuva:"Tuotteet/Kuvat/kuva14.jpg",
@@ -127,7 +127,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"15",
-        nimi:"winter hat",
+        nimi:"pipo",
         hinta:"18.99",
         tuotesivunkuva:["../Kuvat/Kuva15.jpg"],
         kuva:"Tuotteet/Kuvat/kuva15.jpg",
@@ -136,7 +136,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"16",
-        nimi:"cap",
+        nimi:"lippis",
         hinta:"15.99",
         tuotesivunkuva:["../Kuvat/Kuva16.jpg"],
         kuva:"Tuotteet/Kuvat/kuva16.jpg",
@@ -145,7 +145,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"17",
-        nimi:"summer straw hat",
+        nimi:"kesä hattu",
         hinta:"24.99",
         tuotesivunkuva:["../Kuvat/Kuva17.jpg"],
         kuva:"Tuotteet/Kuvat/kuva17.jpg",
@@ -154,7 +154,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"18",
-        nimi:"dress hat",
+        nimi:"puku hattu",
         hinta:"30.99",
         tuotesivunkuva:["../Kuvat/Kuva18.jpg"],
         kuva:"Tuotteet/Kuvat/kuva18.jpg",
@@ -163,7 +163,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"19",
-        nimi:"suit jacket",
+        nimi:"puku takki",
         hinta:"50.99",
         tuotesivunkuva:["../Kuvat/Kuva19.jpg"],
         kuva:"Tuotteet/Kuvat/kuva19.jpg",
@@ -172,7 +172,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"20",
-        nimi:"suit pants",
+        nimi:"puku housut",
         hinta:"49.99",
         tuotesivunkuva:["../Kuvat/Kuva20.jpg"],
         kuva:"Tuotteet/Kuvat/kuva20.jpg",
@@ -181,7 +181,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"21",
-        nimi:"collar shirt",
+        nimi:"kaulus paita",
         hinta:"35.99",
         tuotesivunkuva:["../Kuvat/Kuva21.jpg"],
         kuva:"Tuotteet/Kuvat/kuva21.jpg",
@@ -190,7 +190,7 @@ var tuotelistaid = [{
     },
     {
         tuotenumero:"22",
-        nimi:"formal dress",
+        nimi:"mekko",
         hinta:"119.99",
         tuotesivunkuva:["../Kuvat/Kuva22.jpg"],
         kuva:"Tuotteet/Kuvat/kuva22.jpg",
